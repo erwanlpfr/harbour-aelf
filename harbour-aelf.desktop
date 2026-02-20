@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-aelf
+Exec=harbour-aelf
+Name=AELF
+Name[fr]=AELF
+
+[X-Sailjail]
+OrganizationName=org.aelf
+ApplicationName=harbour-aelf
+Permissions=Internet

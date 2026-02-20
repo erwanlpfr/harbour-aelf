@@ -1,0 +1,64 @@
+# Qt Creator files
+*.pro.user*
+
+# Build directories
+build/
+build-*/
+RPMS/
+*.rpm
+
+# IDE files
+*.qbs.user
+*.qbs.user.*
+*.autosave
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# Compiled binaries
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# Debug files
+*.debug
+Makefile
+*.makefile
+
+# Qt specific
+moc_*.cpp
+moc_*.o
+*.moc
+qrc_*.cpp
+qrc_*.o
+*.qrc.cpp
+ui_*
+documentation.list
+
+# Sailfish OS specific
+*.spec.*
+*.tar.bz2
+*.tar.gz
+
+# Log files
+*.log
+
+# Local configuration
+local.properties
+
+harbour-aelf
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12

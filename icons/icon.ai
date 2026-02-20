@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="114.66667"
+   height="114.66667"
+   viewBox="0 0 114.66667 114.66667"
+   sodipodi:docname="icon.ai"
+   xml:space="preserve"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:export-batch-name="icon"
+   inkscape:export-batch-path="/home/erwan/projects/aelf/icons"
+   inkscape:export-filename="172x172/harbour-aelf.png"
+   inkscape:export-xdpi="144"
+   inkscape:export-ydpi="144"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(84.5662,84.5662,84.5662,-84.5662,0.716867,0.7169284)"
+       spreadMethod="pad"
+       id="linearGradient2"><stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop13" /><stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.94999957"
+         id="stop12" /></linearGradient><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4"><path
+         d="M -33.201501,17.442901 H 3.2606001 V -17.3915 H -33.201501 Z"
+         id="path4" /></clipPath><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6"><path
+         d="M 0,0 H 114.66667 V 114.66667 H 0 Z"
+         id="path6" /></clipPath><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8"><path
+         d="M -7.5240969,17.461801 H 3.1509003 V -9.7629 H -7.5240969 Z"
+         id="path8" /></clipPath><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath10"><path
+         d="M 0,0 H 114.66667 V 114.66667 H 0 Z"
+         id="path10" /></clipPath><rect
+       id="SVGID_1_"
+       width="87.5"
+       height="40.4" /></defs><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="5.0133871"
+     inkscape:cx="55.152334"
+     inkscape:cy="55.750732"
+     inkscape:window-width="1280"
+     inkscape:window-height="1015"
+     inkscape:window-x="20"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer-MC1"><inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="114.66667"
+       height="114.66667"
+       margin="0.399984 0.40000001 0.40000001 0.399984"
+       bleed="0" /><inkscape:grid
+       id="grid10"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="0.99999998"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14902"
+       empspacing="5"
+       enabled="true"
+       visible="true" /></sodipodi:namedview><g
+     id="layer-MC0"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 2"
+     style="display:none" /><g
+     id="layer-MC1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"><path
+       id="path2"
+       d="M 43,85.7 C 19.417,85.7 0.3,66.582 0.3,43 V 43 1.723 C 0.3,0.937 0.937,0.3 1.723,0.3 v 0 H 43 c 23.583,0 42.7,19.118 42.7,42.7 v 0 41.277 c 0,0.786 -0.637,1.423 -1.423,1.423 v 0 z"
+       style="fill:url(#linearGradient2);stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,114.66667)" /><g
+       id="g10"
+       transform="matrix(1.6949153,0,0,1.4275186,10.121871,-25.480663)"><g
+         id="g5"
+         transform="translate(14.973096,37.879304)">
+	<defs
+   id="defs1-3">
+		<rect
+   id="rect10"
+   width="87.5"
+   height="40.400002"
+   x="0"
+   y="0" />
+	</defs>
+	<clipPath
+   id="SVGID_2_">
+		<use
+   href="#SVGID_1_"
+   style="overflow:visible"
+   id="use1" />
+	</clipPath>
+	
+	
+	
+	<path
+   class="st1"
+   d="m 26.3,40.4 1,-2.2 2.2,1 L 15.3,0.1 v 0 H 11.6 8.4 v 0.5 c 3,0.4 3.9,1.6 4.1,2 z"
+   clip-path="url(#SVGID_2_)"
+   id="path4-7" />
+	<path
+   class="st0"
+   d="M 15.7,17.3 15,15.5 14.9,15.3 H 9.4 L 12.2,8.2 V 8 8 8 L 10.8,4.1 v 0 L 10.2,2.4 0,27.8 H 1.3 4.2 V 27.7 L 4.8,26.1 8.4,17.3 H 14 c 0.3,0 1.1,0.3 1.9,1.8 L 16.2,19 Z"
+   clip-path="url(#SVGID_2_)"
+   id="path5" />
+</g></g><circle
+       id="path11"
+       style="fill:#000000;stroke:#000000"
+       cx="67.81842"
+       cy="44.281441"
+       r="0.10041702" /><circle
+       id="path12"
+       style="fill:#000000;stroke:#000000"
+       cx="65.823761"
+       cy="45.677704"
+       r="0.10041702" /></g><style
+     type="text/css"
+     id="style1">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_2_);fill:#BF252A;}
+</style></svg>

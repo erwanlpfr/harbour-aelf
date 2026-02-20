@@ -1,0 +1,20 @@
+# Rename this file as aelf.changes to include changelog
+# entries in your RPM file.
+#
+# Add new changelog entries following the format below.
+# Add newest entries to the top of the list.
+# Separate entries from eachother with a blank line.
+#
+# Alternatively, if your changelog is automatically generated (e.g. with
+# the git-change-log command provided with Sailfish OS SDK), create a
+# aelf.changes.run script to let mb2 run the required commands for you.
+
+# * date Author's Name  version-release
+# - Summary of changes
+
+* Sun Feb 02 2025 Erwan  1.0.0-1
+- Initial release
+- Daily mass and liturgy of hours readings
+- Offline French Bible
+- Liturgical calendar with feast days
+- Regional liturgical zone support
