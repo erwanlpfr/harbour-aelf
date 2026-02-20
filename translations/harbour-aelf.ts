@@ -763,6 +763,13 @@ Pour plus d&apos;informations sur cette application, contacter le mainteneur de 
     </message>
 </context>
 <context>
+    <name>ErrorBanner</name>
+    <message>
+        <source>Réessayer</source>
+        <translation>Réessayer</translation>
+    </message>
+</context>
+<context>
     <name>ErrorHandler</name>
     <message>
         <source>Une erreur inconnue est survenue</source>

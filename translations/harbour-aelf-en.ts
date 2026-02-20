@@ -763,6 +763,13 @@ For more information about this application, contact the maintainer at https://g
     </message>
 </context>
 <context>
+    <name>ErrorBanner</name>
+    <message>
+        <source>Réessayer</source>
+        <translation>Retry</translation>
+    </message>
+</context>
+<context>
     <name>ErrorHandler</name>
     <message>
         <source>Une erreur inconnue est survenue</source>
