@@ -43,6 +43,9 @@ qrc_*.o
 ui_*
 documentation.list
 
+# Qt translation files (compiled)
+*.qm
+
 # Sailfish OS specific
 *.spec.*
 *.tar.bz2

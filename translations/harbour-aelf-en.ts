@@ -5,24 +5,25 @@
     <name>About</name>
     <message>
         <source>AELF est une application liturgique fournissant les messes quotidiennes, les heures et les lectures pour la liturgie catholique.</source>
-        <translation type="unfinished"></translation>
+        <translation>AELF is a liturgical application providing daily masses, hours and readings for Catholic liturgy.</translation>
     </message>
     <message>
         <source>2026-%1 AELF Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>2026-%1 AELF Contributors</translation>
     </message>
     <message>
         <source>Informations</source>
-        <translation type="unfinished"></translation>
+        <translation>Information</translation>
     </message>
     <message>
         <source>À venir</source>
-        <translation type="unfinished"></translation>
+        <translation>Coming soon</translation>
     </message>
     <message>
         <source>- Taille de police dynamique
 - Liturgie hors ligne sur plusieurs périodes</source>
-        <translation type="unfinished"></translation>
+        <translation>- Dynamic font size
+- Offline liturgy over multiple periods</translation>
     </message>
     <message>
         <source>L&apos;application Harbour AELF est développée bénévolement avec le soutien d&apos;AELF (www.aelf.org), l&apos;Association Épiscopale pour la Liturgie Francophone.
@@ -30,1333 +31,1337 @@
 Textes liturgiques, logo et nom reproduits avec l&apos;aimable autorisation d&apos;AELF. Tous droits réservés. AELF n&apos;est pas responsable de cette application.
 
 Pour plus d&apos;informations sur cette application, contacter le mainteneur de https://github.com/erwanlpfr/harbour-aelf</source>
-        <translation type="unfinished"></translation>
+        <translation>The Harbour AELF application is developed voluntarily with the support of AELF (www.aelf.org), the Episcopal Association for Francophone Liturgy.
+
+Liturgical texts, logo and name reproduced with kind permission of AELF. All rights reserved. AELF is not responsible for this application.
+
+For more information about this application, contact the maintainer at https://github.com/erwanlpfr/harbour-aelf</translation>
     </message>
 </context>
 <context>
     <name>AelfFormatter</name>
     <message>
         <source>Gloire au Père,...</source>
-        <translation type="unfinished"></translation>
+        <translation>Glory to the Father,...</translation>
     </message>
     <message>
         <source>Notre Père, qui es aux cieux, &lt;br&gt;que ton nom soit sanctifié,&lt;br&gt;que ton règne vienne,&lt;br&gt;que ta volonté soit faite sur la terre comme au ciel.&lt;br&gt;Donne-nous aujourd&apos;hui notre pain de ce jour.&lt;br&gt;Pardonne-nous nos offenses,&lt;br&gt;comme nous pardonnons aussi à ceux qui nous ont offensés.&lt;br&gt;Et ne nous laisse pas entrer en tentation&lt;br&gt;mais délivre-nous du Mal.&lt;br&gt;&lt;br&gt;Amen</source>
-        <translation type="unfinished"></translation>
+        <translation>Our Father, who art in heaven,&lt;br&gt;hallowed be thy name,&lt;br&gt;thy kingdom come,&lt;br&gt;thy will be done on earth as it is in heaven.&lt;br&gt;Give us this day our daily bread.&lt;br&gt;Forgive us our trespasses,&lt;br&gt;as we forgive those who trespass against us.&lt;br&gt;And lead us not into temptation&lt;br&gt;but deliver us from evil.&lt;br&gt;&lt;br&gt;Amen</translation>
     </message>
     <message>
         <source>Que le Seigneur nous bénisse, qu&apos;il nous garde de tout mal, et nous conduise à la vie éternelle.&lt;br&gt;Amen.</source>
-        <translation type="unfinished"></translation>
+        <translation>May the Lord bless us, protect us from all evil, and bring us to everlasting life.&lt;br&gt;Amen.</translation>
     </message>
     <message>
         <source>Répons</source>
-        <translation type="unfinished"></translation>
+        <translation>Responsory</translation>
     </message>
     <message>
         <source>Antienne:</source>
-        <translation type="unfinished"></translation>
+        <translation>Antiphon:</translation>
     </message>
 </context>
 <context>
     <name>AelfHourLiturgyParser</name>
     <message>
         <source>Notre Père</source>
-        <translation type="unfinished"></translation>
+        <translation>Our Father</translation>
     </message>
     <message>
         <source>Oraison et bénédiction</source>
-        <translation type="unfinished"></translation>
+        <translation>Prayer and blessing</translation>
     </message>
     <message>
         <source>Parole de Dieu</source>
-        <translation type="unfinished"></translation>
+        <translation>Word of God</translation>
     </message>
     <message>
         <source>Intercession</source>
-        <translation type="unfinished"></translation>
+        <translation>Intercession</translation>
     </message>
     <message>
         <source>Antienne invitatoire</source>
-        <translation type="unfinished"></translation>
+        <translation>Invitatory antiphon</translation>
     </message>
     <message>
         <source>Verset</source>
-        <translation type="unfinished"></translation>
+        <translation>Verse</translation>
     </message>
     <message>
         <source>Hymne</source>
-        <translation type="unfinished"></translation>
+        <translation>Hymn</translation>
     </message>
 </context>
 <context>
     <name>Bible</name>
     <message>
         <source>Rechercher</source>
-        <translation type="unfinished"></translation>
+        <translation>Search</translation>
     </message>
     <message>
         <source>Favoris</source>
-        <translation type="unfinished"></translation>
+        <translation>Favourites</translation>
     </message>
     <message>
         <source>Bible</source>
-        <translation type="unfinished"></translation>
+        <translation>Bible</translation>
     </message>
     <message>
         <source>Ancien et Nouveau Testament</source>
-        <translation type="unfinished"></translation>
+        <translation>Old and New Testament</translation>
     </message>
     <message>
         <source>chap.</source>
-        <translation type="unfinished"></translation>
+        <translation>ch.</translation>
     </message>
     <message>
         <source>Ancien Testament</source>
-        <translation type="unfinished"></translation>
+        <translation>Old Testament</translation>
     </message>
     <message>
         <source>Livres Poétiques</source>
-        <translation type="unfinished"></translation>
+        <translation>Poetic Books</translation>
     </message>
     <message>
         <source>Prophètes</source>
-        <translation type="unfinished"></translation>
+        <translation>Prophets</translation>
     </message>
     <message>
         <source>Nouveau Testament</source>
-        <translation type="unfinished"></translation>
+        <translation>New Testament</translation>
     </message>
 </context>
 <context>
     <name>BibleChapters</name>
     <message>
         <source>Retour aux livres</source>
-        <translation type="unfinished"></translation>
+        <translation>Back to books</translation>
     </message>
     <message>
         <source>%1 chapitres</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 chapters</translation>
     </message>
 </context>
 <context>
     <name>BibleDatabase</name>
     <message>
         <source>Genèse</source>
-        <translation type="unfinished"></translation>
+        <translation>Genesis</translation>
     </message>
     <message>
         <source>Gen</source>
-        <translation type="unfinished"></translation>
+        <translation>Gen</translation>
     </message>
     <message>
         <source>Exode</source>
-        <translation type="unfinished"></translation>
+        <translation>Exodus</translation>
     </message>
     <message>
         <source>Exo</source>
-        <translation type="unfinished"></translation>
+        <translation>Exo</translation>
     </message>
     <message>
         <source>Lévitique</source>
-        <translation type="unfinished"></translation>
+        <translation>Leviticus</translation>
     </message>
     <message>
         <source>Lév</source>
-        <translation type="unfinished"></translation>
+        <translation>Lev</translation>
     </message>
     <message>
         <source>Nombres</source>
-        <translation type="unfinished"></translation>
+        <translation>Numbers</translation>
     </message>
     <message>
         <source>Nom</source>
-        <translation type="unfinished"></translation>
+        <translation>Num</translation>
     </message>
     <message>
         <source>Deutéronome</source>
-        <translation type="unfinished"></translation>
+        <translation>Deuteronomy</translation>
     </message>
     <message>
         <source>Deu</source>
-        <translation type="unfinished"></translation>
+        <translation>Deu</translation>
     </message>
     <message>
         <source>Josué</source>
-        <translation type="unfinished"></translation>
+        <translation>Joshua</translation>
     </message>
     <message>
         <source>Jos</source>
-        <translation type="unfinished"></translation>
+        <translation>Jos</translation>
     </message>
     <message>
         <source>Juges</source>
-        <translation type="unfinished"></translation>
+        <translation>Judges</translation>
     </message>
     <message>
         <source>Jug</source>
-        <translation type="unfinished"></translation>
+        <translation>Jdg</translation>
     </message>
     <message>
         <source>Ruth</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruth</translation>
     </message>
     <message>
         <source>Rut</source>
-        <translation type="unfinished"></translation>
+        <translation>Rut</translation>
     </message>
     <message>
         <source>1 Samuel</source>
-        <translation type="unfinished"></translation>
+        <translation>1 Samuel</translation>
     </message>
     <message>
         <source>1Sa</source>
-        <translation type="unfinished"></translation>
+        <translation>1Sa</translation>
     </message>
     <message>
         <source>2 Samuel</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Samuel</translation>
     </message>
     <message>
         <source>2Sa</source>
-        <translation type="unfinished"></translation>
+        <translation>2Sa</translation>
     </message>
     <message>
         <source>1 Rois</source>
-        <translation type="unfinished"></translation>
+        <translation>1 Kings</translation>
     </message>
     <message>
         <source>1Ro</source>
-        <translation type="unfinished"></translation>
+        <translation>1Ki</translation>
     </message>
     <message>
         <source>2 Rois</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Kings</translation>
     </message>
     <message>
         <source>2Ro</source>
-        <translation type="unfinished"></translation>
+        <translation>2Ki</translation>
     </message>
     <message>
         <source>1 Chroniques</source>
-        <translation type="unfinished"></translation>
+        <translation>1 Chronicles</translation>
     </message>
     <message>
         <source>1Ch</source>
-        <translation type="unfinished"></translation>
+        <translation>1Ch</translation>
     </message>
     <message>
         <source>2 Chroniques</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Chronicles</translation>
     </message>
     <message>
         <source>2Ch</source>
-        <translation type="unfinished"></translation>
+        <translation>2Ch</translation>
     </message>
     <message>
         <source>Esdras</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezra</translation>
     </message>
     <message>
         <source>Esd</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezr</translation>
     </message>
     <message>
         <source>Néhémie</source>
-        <translation type="unfinished"></translation>
+        <translation>Nehemiah</translation>
     </message>
     <message>
         <source>Néh</source>
-        <translation type="unfinished"></translation>
+        <translation>Neh</translation>
     </message>
     <message>
         <source>Esther</source>
-        <translation type="unfinished"></translation>
+        <translation>Esther</translation>
     </message>
     <message>
         <source>Est</source>
-        <translation type="unfinished"></translation>
+        <translation>Est</translation>
     </message>
     <message>
         <source>Job</source>
-        <translation type="unfinished"></translation>
+        <translation>Job</translation>
     </message>
     <message>
         <source>Psaumes</source>
-        <translation type="unfinished"></translation>
+        <translation>Psalms</translation>
     </message>
     <message>
         <source>Psa</source>
-        <translation type="unfinished"></translation>
+        <translation>Psa</translation>
     </message>
     <message>
         <source>Proverbes</source>
-        <translation type="unfinished"></translation>
+        <translation>Proverbs</translation>
     </message>
     <message>
         <source>Pro</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro</translation>
     </message>
     <message>
         <source>Ecclésiaste</source>
-        <translation type="unfinished"></translation>
+        <translation>Ecclesiastes</translation>
     </message>
     <message>
         <source>Ecc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ecc</translation>
     </message>
     <message>
         <source>Cantique</source>
-        <translation type="unfinished"></translation>
+        <translation>Song of Songs</translation>
     </message>
     <message>
         <source>Can</source>
-        <translation type="unfinished"></translation>
+        <translation>Son</translation>
     </message>
     <message>
         <source>Esaïe</source>
-        <translation type="unfinished"></translation>
+        <translation>Isaiah</translation>
     </message>
     <message>
         <source>Esa</source>
-        <translation type="unfinished"></translation>
+        <translation>Isa</translation>
     </message>
     <message>
         <source>Jérémie</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeremiah</translation>
     </message>
     <message>
         <source>Jér</source>
-        <translation type="unfinished"></translation>
+        <translation>Jer</translation>
     </message>
     <message>
         <source>Lamentations</source>
-        <translation type="unfinished"></translation>
+        <translation>Lamentations</translation>
     </message>
     <message>
         <source>Lam</source>
-        <translation type="unfinished"></translation>
+        <translation>Lam</translation>
     </message>
     <message>
         <source>Ezéchiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezekiel</translation>
     </message>
     <message>
         <source>Eze</source>
-        <translation type="unfinished"></translation>
+        <translation>Eze</translation>
     </message>
     <message>
         <source>Daniel</source>
-        <translation type="unfinished"></translation>
+        <translation>Daniel</translation>
     </message>
     <message>
         <source>Dan</source>
-        <translation type="unfinished"></translation>
+        <translation>Dan</translation>
     </message>
     <message>
         <source>Osée</source>
-        <translation type="unfinished"></translation>
+        <translation>Hosea</translation>
     </message>
     <message>
         <source>Osé</source>
-        <translation type="unfinished"></translation>
+        <translation>Hos</translation>
     </message>
     <message>
         <source>Joël</source>
-        <translation type="unfinished"></translation>
+        <translation>Joel</translation>
     </message>
     <message>
         <source>Joë</source>
-        <translation type="unfinished"></translation>
+        <translation>Joe</translation>
     </message>
     <message>
         <source>Amos</source>
-        <translation type="unfinished"></translation>
+        <translation>Amos</translation>
     </message>
     <message>
         <source>Amo</source>
-        <translation type="unfinished"></translation>
+        <translation>Amo</translation>
     </message>
     <message>
         <source>Abdias</source>
-        <translation type="unfinished"></translation>
+        <translation>Obadiah</translation>
     </message>
     <message>
         <source>Abd</source>
-        <translation type="unfinished"></translation>
+        <translation>Oba</translation>
     </message>
     <message>
         <source>Jonas</source>
-        <translation type="unfinished"></translation>
+        <translation>Jonah</translation>
     </message>
     <message>
         <source>Jon</source>
-        <translation type="unfinished"></translation>
+        <translation>Jon</translation>
     </message>
     <message>
         <source>Michée</source>
-        <translation type="unfinished"></translation>
+        <translation>Micah</translation>
     </message>
     <message>
         <source>Mic</source>
-        <translation type="unfinished"></translation>
+        <translation>Mic</translation>
     </message>
     <message>
         <source>Nahum</source>
-        <translation type="unfinished"></translation>
+        <translation>Nahum</translation>
     </message>
     <message>
         <source>Nah</source>
-        <translation type="unfinished"></translation>
+        <translation>Nah</translation>
     </message>
     <message>
         <source>Habacuc</source>
-        <translation type="unfinished"></translation>
+        <translation>Habakkuk</translation>
     </message>
     <message>
         <source>Hab</source>
-        <translation type="unfinished"></translation>
+        <translation>Hab</translation>
     </message>
     <message>
         <source>Sophonie</source>
-        <translation type="unfinished"></translation>
+        <translation>Zephaniah</translation>
     </message>
     <message>
         <source>Soph</source>
-        <translation type="unfinished"></translation>
+        <translation>Zep</translation>
     </message>
     <message>
         <source>Aggée</source>
-        <translation type="unfinished"></translation>
+        <translation>Haggai</translation>
     </message>
     <message>
         <source>Agg</source>
-        <translation type="unfinished"></translation>
+        <translation>Hag</translation>
     </message>
     <message>
         <source>Zacharie</source>
-        <translation type="unfinished"></translation>
+        <translation>Zechariah</translation>
     </message>
     <message>
         <source>Zac</source>
-        <translation type="unfinished"></translation>
+        <translation>Zec</translation>
     </message>
     <message>
         <source>Malachie</source>
-        <translation type="unfinished"></translation>
+        <translation>Malachi</translation>
     </message>
     <message>
         <source>Mal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mal</translation>
     </message>
     <message>
         <source>Matthieu</source>
-        <translation type="unfinished"></translation>
+        <translation>Matthew</translation>
     </message>
     <message>
         <source>Mat</source>
-        <translation type="unfinished"></translation>
+        <translation>Mat</translation>
     </message>
     <message>
         <source>Marc</source>
-        <translation type="unfinished"></translation>
+        <translation>Mark</translation>
     </message>
     <message>
         <source>Mar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mar</translation>
     </message>
     <message>
         <source>Luc</source>
-        <translation type="unfinished"></translation>
+        <translation>Luke</translation>
     </message>
     <message>
         <source>Jean</source>
-        <translation type="unfinished"></translation>
+        <translation>John</translation>
     </message>
     <message>
         <source>Jea</source>
-        <translation type="unfinished"></translation>
+        <translation>Joh</translation>
     </message>
     <message>
         <source>Actes</source>
-        <translation type="unfinished"></translation>
+        <translation>Acts</translation>
     </message>
     <message>
         <source>Act</source>
-        <translation type="unfinished"></translation>
+        <translation>Act</translation>
     </message>
     <message>
         <source>Romains</source>
-        <translation type="unfinished"></translation>
+        <translation>Romans</translation>
     </message>
     <message>
         <source>Rom</source>
-        <translation type="unfinished"></translation>
+        <translation>Rom</translation>
     </message>
     <message>
         <source>1 Corinthiens</source>
-        <translation type="unfinished"></translation>
+        <translation>1 Corinthians</translation>
     </message>
     <message>
         <source>1Co</source>
-        <translation type="unfinished"></translation>
+        <translation>1Co</translation>
     </message>
     <message>
         <source>2 Corinthiens</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Corinthians</translation>
     </message>
     <message>
         <source>2Co</source>
-        <translation type="unfinished"></translation>
+        <translation>2Co</translation>
     </message>
     <message>
         <source>Galates</source>
-        <translation type="unfinished"></translation>
+        <translation>Galatians</translation>
     </message>
     <message>
         <source>Gal</source>
-        <translation type="unfinished"></translation>
+        <translation>Gal</translation>
     </message>
     <message>
         <source>Ephésiens</source>
-        <translation type="unfinished"></translation>
+        <translation>Ephesians</translation>
     </message>
     <message>
         <source>Eph</source>
-        <translation type="unfinished"></translation>
+        <translation>Eph</translation>
     </message>
     <message>
         <source>Philippiens</source>
-        <translation type="unfinished"></translation>
+        <translation>Philippians</translation>
     </message>
     <message>
         <source>Phi</source>
-        <translation type="unfinished"></translation>
+        <translation>Phi</translation>
     </message>
     <message>
         <source>Colossiens</source>
-        <translation type="unfinished"></translation>
+        <translation>Colossians</translation>
     </message>
     <message>
         <source>Col</source>
-        <translation type="unfinished"></translation>
+        <translation>Col</translation>
     </message>
     <message>
         <source>1 Thessaloniciens</source>
-        <translation type="unfinished"></translation>
+        <translation>1 Thessalonians</translation>
     </message>
     <message>
         <source>1Th</source>
-        <translation type="unfinished"></translation>
+        <translation>1Th</translation>
     </message>
     <message>
         <source>2 Thessaloniciens</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Thessalonians</translation>
     </message>
     <message>
         <source>2Th</source>
-        <translation type="unfinished"></translation>
+        <translation>2Th</translation>
     </message>
     <message>
         <source>1 Timothée</source>
-        <translation type="unfinished"></translation>
+        <translation>1 Timothy</translation>
     </message>
     <message>
         <source>1Ti</source>
-        <translation type="unfinished"></translation>
+        <translation>1Ti</translation>
     </message>
     <message>
         <source>2 Timothée</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Timothy</translation>
     </message>
     <message>
         <source>2Ti</source>
-        <translation type="unfinished"></translation>
+        <translation>2Ti</translation>
     </message>
     <message>
         <source>Tite</source>
-        <translation type="unfinished"></translation>
+        <translation>Titus</translation>
     </message>
     <message>
         <source>Tit</source>
-        <translation type="unfinished"></translation>
+        <translation>Tit</translation>
     </message>
     <message>
         <source>Philémon</source>
-        <translation type="unfinished"></translation>
+        <translation>Philemon</translation>
     </message>
     <message>
         <source>Phm</source>
-        <translation type="unfinished"></translation>
+        <translation>Phm</translation>
     </message>
     <message>
         <source>Hébreux</source>
-        <translation type="unfinished"></translation>
+        <translation>Hebrews</translation>
     </message>
     <message>
         <source>Héb</source>
-        <translation type="unfinished"></translation>
+        <translation>Heb</translation>
     </message>
     <message>
         <source>Jacques</source>
-        <translation type="unfinished"></translation>
+        <translation>James</translation>
     </message>
     <message>
         <source>Jac</source>
-        <translation type="unfinished"></translation>
+        <translation>Jam</translation>
     </message>
     <message>
         <source>1 Pierre</source>
-        <translation type="unfinished"></translation>
+        <translation>1 Peter</translation>
     </message>
     <message>
         <source>1Pi</source>
-        <translation type="unfinished"></translation>
+        <translation>1Pe</translation>
     </message>
     <message>
         <source>2 Pierre</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Peter</translation>
     </message>
     <message>
         <source>2Pi</source>
-        <translation type="unfinished"></translation>
+        <translation>2Pe</translation>
     </message>
     <message>
         <source>1 Jean</source>
-        <translation type="unfinished"></translation>
+        <translation>1 John</translation>
     </message>
     <message>
         <source>1Je</source>
-        <translation type="unfinished"></translation>
+        <translation>1Jo</translation>
     </message>
     <message>
         <source>2 Jean</source>
-        <translation type="unfinished"></translation>
+        <translation>2 John</translation>
     </message>
     <message>
         <source>2Je</source>
-        <translation type="unfinished"></translation>
+        <translation>2Jo</translation>
     </message>
     <message>
         <source>3 Jean</source>
-        <translation type="unfinished"></translation>
+        <translation>3 John</translation>
     </message>
     <message>
         <source>3Je</source>
-        <translation type="unfinished"></translation>
+        <translation>3Jo</translation>
     </message>
     <message>
         <source>Jude</source>
-        <translation type="unfinished"></translation>
+        <translation>Jude</translation>
     </message>
     <message>
         <source>Jud</source>
-        <translation type="unfinished"></translation>
+        <translation>Jud</translation>
     </message>
     <message>
         <source>Apocalypse</source>
-        <translation type="unfinished"></translation>
+        <translation>Revelation</translation>
     </message>
     <message>
         <source>Apo</source>
-        <translation type="unfinished"></translation>
+        <translation>Rev</translation>
     </message>
     <message>
         <source>Ancien Testament</source>
-        <translation type="unfinished"></translation>
+        <translation>Old Testament</translation>
     </message>
     <message>
         <source>Livres Poétiques</source>
-        <translation type="unfinished"></translation>
+        <translation>Poetic Books</translation>
     </message>
     <message>
         <source>Prophètes</source>
-        <translation type="unfinished"></translation>
+        <translation>Prophets</translation>
     </message>
     <message>
         <source>Nouveau Testament</source>
-        <translation type="unfinished"></translation>
+        <translation>New Testament</translation>
     </message>
 </context>
 <context>
     <name>BibleVerses</name>
     <message>
         <source>Partager</source>
-        <translation type="unfinished"></translation>
+        <translation>Share</translation>
     </message>
     <message>
         <source>Retour aux chapitres</source>
-        <translation type="unfinished"></translation>
+        <translation>Back to chapters</translation>
     </message>
     <message>
         <source>%1 versets</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 verses</translation>
     </message>
     <message>
         <source>Copier</source>
-        <translation type="unfinished"></translation>
+        <translation>Copy</translation>
     </message>
     <message>
         <source>Aucun verset disponible</source>
-        <translation type="unfinished"></translation>
+        <translation>No verse available</translation>
     </message>
     <message>
         <source>Tirez vers le bas pour actualiser</source>
-        <translation type="unfinished"></translation>
+        <translation>Pull down to refresh</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
         <source>AELF</source>
-        <translation type="unfinished"></translation>
+        <translation>AELF</translation>
     </message>
 </context>
 <context>
     <name>DateHelper</name>
     <message>
         <source>Aujourd&apos;hui</source>
-        <translation type="unfinished"></translation>
+        <translation>Today</translation>
     </message>
     <message>
         <source>Demain</source>
-        <translation type="unfinished"></translation>
+        <translation>Tomorrow</translation>
     </message>
     <message>
         <source>Hier</source>
-        <translation type="unfinished"></translation>
+        <translation>Yesterday</translation>
     </message>
     <message>
         <source>Date invalide</source>
-        <translation type="unfinished"></translation>
+        <translation>Invalid date</translation>
     </message>
     <message>
         <source>Lectures</source>
-        <translation type="unfinished"></translation>
+        <translation>Readings</translation>
     </message>
     <message>
         <source>Laudes</source>
-        <translation type="unfinished"></translation>
+        <translation>Lauds</translation>
     </message>
     <message>
         <source>Tierce</source>
-        <translation type="unfinished"></translation>
+        <translation>Terce</translation>
     </message>
     <message>
         <source>Sexte</source>
-        <translation type="unfinished"></translation>
+        <translation>Sext</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>None</translation>
     </message>
     <message>
         <source>Vêpres</source>
-        <translation type="unfinished"></translation>
+        <translation>Vespers</translation>
     </message>
     <message>
         <source>Complies</source>
-        <translation type="unfinished"></translation>
+        <translation>Compline</translation>
     </message>
 </context>
 <context>
     <name>ErrorHandler</name>
     <message>
         <source>Une erreur inconnue est survenue</source>
-        <translation type="unfinished"></translation>
+        <translation>An unknown error occurred</translation>
     </message>
     <message>
         <source>Critique : </source>
-        <translation type="unfinished"></translation>
+        <translation>Critical: </translation>
     </message>
     <message>
         <source>Attention : </source>
-        <translation type="unfinished"></translation>
+        <translation>Warning: </translation>
     </message>
     <message>
         <source>Délai d&apos;attente réseau dépassé. Vérifiez votre connexion.</source>
-        <translation type="unfinished"></translation>
+        <translation>Network timeout exceeded. Check your connection.</translation>
     </message>
     <message>
         <source>Serveur introuvable. Vérifiez votre connexion internet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Server not found. Check your internet connection.</translation>
     </message>
     <message>
         <source>Connexion refusée. Le serveur est peut-être indisponible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Connection refused. The server may be unavailable.</translation>
     </message>
     <message>
         <source>Erreur réseau : %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Network error: %1</translation>
     </message>
     <message>
         <source>Base de données corrompue ou incomplète.</source>
-        <translation type="unfinished"></translation>
+        <translation>Database corrupted or incomplete.</translation>
     </message>
     <message>
         <source>Impossible d&apos;ouvrir la base de données Bible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Unable to open the Bible database.</translation>
     </message>
     <message>
         <source>Erreur de base de données : %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Database error: %1</translation>
     </message>
     <message>
         <source>Erreur lors de l&apos;analyse des données reçues.</source>
-        <translation type="unfinished"></translation>
+        <translation>Error while parsing received data.</translation>
     </message>
     <message>
         <source>Erreur d&apos;accès aux fichiers : %1</source>
-        <translation type="unfinished"></translation>
+        <translation>File access error: %1</translation>
     </message>
 </context>
 <context>
     <name>ExternalUrlPage</name>
     <message>
         <source>Swipe left to preview.</source>
-        <translation type="unfinished"></translation>
+        <translation>Swipe left to preview.</translation>
     </message>
     <message>
         <source>You are using a mobile data connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>You are using a mobile data connection.</translation>
     </message>
 </context>
 <context>
     <name>HourLiturgy</name>
     <message>
         <source>Liturgie des Heures</source>
-        <translation type="unfinished"></translation>
+        <translation>Liturgy of the Hours</translation>
     </message>
     <message>
         <source>Chargement...</source>
-        <translation type="unfinished"></translation>
+        <translation>Loading...</translation>
     </message>
     <message>
         <source>Aucune liturgie disponible</source>
-        <translation type="unfinished"></translation>
+        <translation>No liturgy available</translation>
     </message>
     <message>
         <source>Tirez vers le bas pour changer la date ou vérifier votre connexion</source>
-        <translation type="unfinished"></translation>
+        <translation>Pull down to change the date or check your connection</translation>
     </message>
     <message>
         <source>Récupération de la liturgie...</source>
-        <translation type="unfinished"></translation>
+        <translation>Fetching liturgy...</translation>
     </message>
 </context>
 <context>
     <name>HourTypePicker</name>
     <message>
         <source>lectures</source>
-        <translation type="unfinished"></translation>
+        <translation>readings</translation>
     </message>
     <message>
         <source>lauds</source>
-        <translation type="unfinished"></translation>
+        <translation>lauds</translation>
     </message>
     <message>
         <source>terce</source>
-        <translation type="unfinished"></translation>
+        <translation>terce</translation>
     </message>
     <message>
         <source>sext</source>
-        <translation type="unfinished"></translation>
+        <translation>sext</translation>
     </message>
     <message>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>none</translation>
     </message>
     <message>
         <source>vespers</source>
-        <translation type="unfinished"></translation>
+        <translation>vespers</translation>
     </message>
     <message>
         <source>compline</source>
-        <translation type="unfinished"></translation>
+        <translation>compline</translation>
     </message>
     <message>
         <source>Liturgie des Heures</source>
-        <translation type="unfinished"></translation>
+        <translation>Liturgy of the Hours</translation>
     </message>
     <message>
         <source>Office des lectures</source>
-        <translation type="unfinished"></translation>
+        <translation>Office of Readings</translation>
     </message>
     <message>
         <source>Prière du matin</source>
-        <translation type="unfinished"></translation>
+        <translation>Morning Prayer</translation>
     </message>
     <message>
         <source>Prière du milieu de la matinée</source>
-        <translation type="unfinished"></translation>
+        <translation>Mid-Morning Prayer</translation>
     </message>
     <message>
         <source>Prière de midi</source>
-        <translation type="unfinished"></translation>
+        <translation>Midday Prayer</translation>
     </message>
     <message>
         <source>Prière de l&apos;après-midi</source>
-        <translation type="unfinished"></translation>
+        <translation>Afternoon Prayer</translation>
     </message>
     <message>
         <source>Prière du soir</source>
-        <translation type="unfinished"></translation>
+        <translation>Evening Prayer</translation>
     </message>
     <message>
         <source>Prière de la nuit</source>
-        <translation type="unfinished"></translation>
+        <translation>Night Prayer</translation>
     </message>
 </context>
 <context>
     <name>Information</name>
     <message>
         <source>Informations</source>
-        <translation type="unfinished"></translation>
+        <translation>Information</translation>
     </message>
     <message>
         <source>Détails</source>
-        <translation type="unfinished"></translation>
+        <translation>Details</translation>
     </message>
     <message>
         <source>Temps liturgique</source>
-        <translation type="unfinished"></translation>
+        <translation>Liturgical season</translation>
     </message>
     <message>
         <source>Célébration</source>
-        <translation type="unfinished"></translation>
+        <translation>Celebration</translation>
     </message>
     <message>
         <source>Zone liturgique</source>
-        <translation type="unfinished"></translation>
+        <translation>Liturgical zone</translation>
     </message>
     <message>
         <source>Jour</source>
-        <translation type="unfinished"></translation>
+        <translation>Day</translation>
     </message>
     <message>
         <source>Semaine</source>
-        <translation type="unfinished"></translation>
+        <translation>Week</translation>
     </message>
     <message>
         <source>Année liturgique</source>
-        <translation type="unfinished"></translation>
+        <translation>Liturgical year</translation>
     </message>
     <message>
         <source>Résumé du jour</source>
-        <translation type="unfinished"></translation>
+        <translation>Daily summary</translation>
     </message>
     <message>
         <source>Aucune information disponible</source>
-        <translation type="unfinished"></translation>
+        <translation>No information available</translation>
     </message>
     <message>
         <source>Tirez vers le bas pour changer la date ou vérifier votre connexion</source>
-        <translation type="unfinished"></translation>
+        <translation>Pull down to change the date or check your connection</translation>
     </message>
 </context>
 <context>
     <name>LicenseListPart</name>
     <message>
         <source>License text</source>
-        <translation type="unfinished"></translation>
+        <translation>License text</translation>
     </message>
 </context>
 <context>
     <name>MainPullDownMenu</name>
     <message>
         <source>Messe</source>
-        <translation type="unfinished"></translation>
+        <translation>Mass</translation>
     </message>
     <message>
         <source>Liturgie des Heures</source>
-        <translation type="unfinished"></translation>
+        <translation>Liturgy of the Hours</translation>
     </message>
     <message>
         <source>Informations</source>
-        <translation type="unfinished"></translation>
+        <translation>Information</translation>
     </message>
     <message>
         <source>À propos</source>
-        <translation type="unfinished"></translation>
+        <translation>About</translation>
     </message>
     <message>
         <source>Paramètres</source>
-        <translation type="unfinished"></translation>
+        <translation>Settings</translation>
     </message>
     <message>
         <source>Bible</source>
-        <translation type="unfinished"></translation>
+        <translation>Bible</translation>
     </message>
 </context>
 <context>
     <name>Mass</name>
     <message>
         <source>Messe</source>
-        <translation type="unfinished"></translation>
+        <translation>Mass</translation>
     </message>
     <message>
         <source>Chargement...</source>
-        <translation type="unfinished"></translation>
+        <translation>Loading...</translation>
     </message>
     <message>
         <source>Récupération de la messe...</source>
-        <translation type="unfinished"></translation>
+        <translation>Fetching mass...</translation>
     </message>
     <message>
         <source>Aucune messe disponible</source>
-        <translation type="unfinished"></translation>
+        <translation>No mass available</translation>
     </message>
     <message>
         <source>Tirez vers le bas pour changer la date ou vérifier votre connexion</source>
-        <translation type="unfinished"></translation>
+        <translation>Pull down to change the date or check your connection</translation>
     </message>
 </context>
 <context>
     <name>MassPicker</name>
     <message>
         <source>Messe</source>
-        <translation type="unfinished"></translation>
+        <translation>Mass</translation>
     </message>
 </context>
 <context>
     <name>Opal.About</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>About</translation>
     </message>
     <message>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Version %1</translation>
     </message>
     <message>
         <source>Development</source>
-        <translation type="unfinished"></translation>
+        <translation>Development</translation>
     </message>
     <message>
         <source>show contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>show contributors</translation>
     </message>
     <message>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Homepage</translation>
     </message>
     <message>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Changelog</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Translations</translation>
     </message>
     <message>
         <source>Source Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Source Code</translation>
     </message>
     <message>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>Donations</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>License</translation>
     </message>
     <message numerus="yes">
         <source>show license(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>show license</numerusform>
+            <numerusform>show licenses</numerusform>
         </translation>
     </message>
     <message>
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation>News</translation>
     </message>
     <message>
         <source>Changes since version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Changes since version %1</translation>
     </message>
     <message>
         <source>show details</source>
-        <translation type="unfinished"></translation>
+        <translation>show details</translation>
     </message>
     <message>
         <source>Thank you!</source>
-        <translation type="unfinished"></translation>
+        <translation>Thank you!</translation>
     </message>
     <message>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Details</translation>
     </message>
     <message>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Contributors</translation>
     </message>
     <message>
         <source>Acknowledgements</source>
-        <translation type="unfinished"></translation>
+        <translation>Acknowledgements</translation>
     </message>
     <message>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <source>Download license texts</source>
-        <translation type="unfinished"></translation>
+        <translation>Download license texts</translation>
     </message>
     <message>
         <source>You are using a mobile data connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>You are using a mobile data connection.</translation>
     </message>
     <message numerus="yes">
         <source>License(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>License</numerusform>
+            <numerusform>Licenses</numerusform>
         </translation>
     </message>
     <message>
         <source>Note: please check the source code for most accurate information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Note: please check the source code for most accurate information.</translation>
     </message>
 </context>
 <context>
     <name>Opal.About.Common</name>
     <message>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
-        <translation type="unfinished"></translation>
+        <translation>If you want to support my work, you can buy me a cup of coffee.</translation>
     </message>
     <message>
         <source>You can support this project by contributing, or by donating using any of these services.</source>
-        <translation type="unfinished"></translation>
+        <translation>You can support this project by contributing, or by donating using any of these services.</translation>
     </message>
     <message>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation type="unfinished"></translation>
+        <translation>Your contributions to translations or code would be most welcome.</translation>
     </message>
 </context>
 <context>
     <name>Opal.LinkHandler</name>
     <message>
         <source>Copied to clipboard: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Copied to clipboard: %1</translation>
     </message>
     <message>
         <source>Share link</source>
-        <translation type="unfinished"></translation>
+        <translation>Share link</translation>
     </message>
     <message>
         <source>Phone number</source>
-        <translation type="unfinished"></translation>
+        <translation>Phone number</translation>
     </message>
     <message>
         <source>External link</source>
-        <translation type="unfinished"></translation>
+        <translation>External link</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Copy link</translation>
     </message>
     <message>
         <source>Copy text</source>
-        <translation type="unfinished"></translation>
+        <translation>Copy text</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Share</translation>
     </message>
     <message>
         <source>Open in browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Open in browser</translation>
     </message>
     <message>
         <source>Open externally</source>
-        <translation type="unfinished"></translation>
+        <translation>Open externally</translation>
     </message>
     <message>
         <source>No preview available.</source>
-        <translation type="unfinished"></translation>
+        <translation>No preview available.</translation>
     </message>
     <message>
         <source>The page is taking too long to load.</source>
-        <translation type="unfinished"></translation>
+        <translation>The page is taking too long to load.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Introduction</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduction</translation>
     </message>
 </context>
 <context>
     <name>Reading</name>
     <message>
         <source>Psaume</source>
-        <translation type="unfinished"></translation>
+        <translation>Psalm</translation>
     </message>
     <message>
         <source>Cantique</source>
-        <translation type="unfinished"></translation>
+        <translation>Canticle</translation>
     </message>
     <message>
         <source>Inconnu</source>
-        <translation type="unfinished"></translation>
+        <translation>Unknown</translation>
     </message>
     <message>
         <source>Première Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>First Reading</translation>
     </message>
     <message>
         <source>Deuxième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Second Reading</translation>
     </message>
     <message>
         <source>Troisième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Third Reading</translation>
     </message>
     <message>
         <source>Quatrième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Fourth Reading</translation>
     </message>
     <message>
         <source>Cinquième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Fifth Reading</translation>
     </message>
     <message>
         <source>Sixième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Sixth Reading</translation>
     </message>
     <message>
         <source>Septième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Seventh Reading</translation>
     </message>
     <message>
         <source>Huitième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Eighth Reading</translation>
     </message>
     <message>
         <source>Neuvième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Ninth Reading</translation>
     </message>
     <message>
         <source>Dixième Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Tenth Reading</translation>
     </message>
     <message>
         <source>Évangile</source>
-        <translation type="unfinished"></translation>
+        <translation>Gospel</translation>
     </message>
     <message>
         <source>Évangile (lecture longue)</source>
-        <translation type="unfinished"></translation>
+        <translation>Gospel (long reading)</translation>
     </message>
     <message>
         <source>Évangile (lecture brève)</source>
-        <translation type="unfinished"></translation>
+        <translation>Gospel (short reading)</translation>
     </message>
     <message>
         <source>Séquence</source>
-        <translation type="unfinished"></translation>
+        <translation>Sequence</translation>
     </message>
     <message>
         <source>Entrée messianique</source>
-        <translation type="unfinished"></translation>
+        <translation>Messianic entrance</translation>
     </message>
     <message>
         <source>Introduction</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduction</translation>
     </message>
     <message>
         <source>Antienne invitatoire</source>
-        <translation type="unfinished"></translation>
+        <translation>Invitatory antiphon</translation>
     </message>
     <message>
         <source>Hymne</source>
-        <translation type="unfinished"></translation>
+        <translation>Hymn</translation>
     </message>
     <message>
         <source>Verset</source>
-        <translation type="unfinished"></translation>
+        <translation>Verse</translation>
     </message>
     <message>
         <source>Canticle</source>
-        <translation type="unfinished"></translation>
+        <translation>Canticle</translation>
     </message>
     <message>
         <source>Cantique de Marie</source>
-        <translation type="unfinished"></translation>
+        <translation>Canticle of Mary</translation>
     </message>
     <message>
         <source>Parole de Dieu</source>
-        <translation type="unfinished"></translation>
+        <translation>Word of God</translation>
     </message>
     <message>
         <source>Lecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Reading</translation>
     </message>
     <message>
         <source>Lecture patristique</source>
-        <translation type="unfinished"></translation>
+        <translation>Patristic reading</translation>
     </message>
     <message>
         <source>Intercession</source>
-        <translation type="unfinished"></translation>
+        <translation>Intercession</translation>
     </message>
     <message>
         <source>Notre Père</source>
-        <translation type="unfinished"></translation>
+        <translation>Our Father</translation>
     </message>
     <message>
         <source>Oraison et bénédiction</source>
-        <translation type="unfinished"></translation>
+        <translation>Prayer and blessing</translation>
     </message>
     <message>
         <source>Te Deum</source>
-        <translation type="unfinished"></translation>
+        <translation>Te Deum</translation>
     </message>
     <message>
         <source>Messes</source>
-        <translation type="unfinished"></translation>
+        <translation>Masses</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Paramètres</source>
-        <translation type="unfinished"></translation>
+        <translation>Settings</translation>
     </message>
 </context>
 <context>
     <name>ZoneCombobox</name>
     <message>
         <source>France</source>
-        <translation type="unfinished"></translation>
+        <translation>France</translation>
     </message>
     <message>
         <source>Afrique</source>
-        <translation type="unfinished"></translation>
+        <translation>Africa</translation>
     </message>
     <message>
         <source>Suisse</source>
-        <translation type="unfinished"></translation>
+        <translation>Switzerland</translation>
     </message>
     <message>
         <source>Canada</source>
-        <translation type="unfinished"></translation>
+        <translation>Canada</translation>
     </message>
     <message>
         <source>Belgique</source>
-        <translation type="unfinished"></translation>
+        <translation>Belgium</translation>
     </message>
     <message>
         <source>Luxembourg</source>
-        <translation type="unfinished"></translation>
+        <translation>Luxembourg</translation>
     </message>
     <message>
         <source>Romain</source>
-        <translation type="unfinished"></translation>
+        <translation>Roman</translation>
     </message>
     <message>
         <source>Changer la région</source>
-        <translation type="unfinished"></translation>
+        <translation>Change region</translation>
     </message>
 </context>
 </TS>
