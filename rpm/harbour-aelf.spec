@@ -16,12 +16,18 @@ BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  pkgconfig(Qt5Sql)
+BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  desktop-file-utils
 
 %description
 Application catholique pour lire les lectures du jour, la messe et la
 liturgie des heures depuis le site AELF (Association Épiscopale Liturgique
 pour les pays Francophones).
+
+Catholic application for daily readings, mass and liturgy of the hours
+from the AELF website (Association Épiscopale Liturgique pour les pays
+Francophones). Includes an offline French Bible.
 
 
 %prep
