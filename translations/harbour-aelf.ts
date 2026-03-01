@@ -20,10 +20,8 @@
         <translation>À venir</translation>
     </message>
     <message>
-        <source>- Taille de police dynamique
-- Liturgie hors ligne sur plusieurs périodes</source>
-        <translation>- Taille de police dynamique
-- Liturgie hors ligne sur plusieurs périodes</translation>
+        <source>- Liturgie hors ligne sur plusieurs périodes</source>
+        <translation>- Liturgie hors ligne sur plusieurs périodes</translation>
     </message>
     <message>
         <source>L&apos;application Harbour AELF est développée bénévolement avec le soutien d&apos;AELF (www.aelf.org), l&apos;Association Épiscopale pour la Liturgie Francophone.
@@ -1334,6 +1332,18 @@ Pour plus d&apos;informations sur cette application, contacter le mainteneur de 
     <message>
         <source>Paramètres</source>
         <translation>Paramètres</translation>
+    </message>
+    <message>
+        <source>Affichage</source>
+        <translation>Affichage</translation>
+    </message>
+    <message>
+        <source>Taille de police</source>
+        <translation>Taille de police</translation>
+    </message>
+    <message>
+        <source>Exemple de texte avec la taille actuelle</source>
+        <translation>Exemple de texte avec la taille actuelle</translation>
     </message>
 </context>
 <context>

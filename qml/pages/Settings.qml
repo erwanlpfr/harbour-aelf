@@ -17,9 +17,11 @@ Page {
 
   SilicaFlickable {
     anchors.fill: parent
+    contentHeight: contentColumn.height
 
     Column {
-      anchors.fill: parent
+      id: contentColumn
+      width: parent.width
 
       PageHeader {
         title: qsTr("Paramètres")
@@ -29,6 +31,34 @@ Page {
         id: zoneCombobox
         value: Root.AppSettings.currentZone
         onValueChanged: Root.AppSettings.setZone(value)
+      }
+
+      SectionHeader {
+        text: qsTr("Affichage")
+      }
+
+      Slider {
+        id: fontScaleSlider
+        width: parent.width
+        minimumValue: 0.8
+        maximumValue: 1.6
+        stepSize: 0.05
+        value: Root.AppSettings.currentFontScale
+        label: qsTr("Taille de police")
+        valueText: Math.round(sliderValue * 100) + "%"
+
+        onSliderValueChanged: {
+          Root.AppSettings.setFontScale(sliderValue)
+        }
+      }
+
+      Label {
+        x: Theme.horizontalPageMargin
+        width: parent.width - 2 * Theme.horizontalPageMargin
+        text: qsTr("Exemple de texte avec la taille actuelle")
+        wrapMode: Text.WordWrap
+        font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeMedium)
+        color: Theme.primaryColor
       }
     }
   }

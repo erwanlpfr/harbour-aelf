@@ -13,7 +13,7 @@ A.AboutPageBase {
     allowedOrientations: Orientation.All
     appName: "aelf"
     appIcon: "image://theme/harbour-aelf"
-    appVersion: "1.0.0"
+    appVersion: "1.1.0"
     description: qsTr("AELF est une application liturgique fournissant les messes quotidiennes, les heures et les lectures pour la liturgie catholique.")
     authors: [qsTr("2026-%1 AELF Contributors").arg((new Date()).getFullYear())]
     licenses: A.License { spdxId: "GPL-3.0-or-later" }
@@ -31,8 +31,7 @@ Pour plus d'informations sur cette application, contacter le mainteneur de https
         },
         A.InfoSection {
             title: qsTr("À venir")
-            text: qsTr("- Taille de police dynamique
-- Liturgie hors ligne sur plusieurs périodes")
+            text: qsTr("- Liturgie hors ligne sur plusieurs périodes")
             enabled: true
         }
     ]

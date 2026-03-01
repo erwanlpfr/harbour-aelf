@@ -13,6 +13,7 @@
 - **Bible** : Bible complète en français accessible hors ligne.
 - **Calendrier** : Calendrier liturgique avec les fêtes.
 - **Régional** : Prise en charge des différentes zones liturgiques.
+- **Taille de police dynamique** : Ajustez la taille du texte via les paramètres ou par geste de pincement.
 
 ## 📸 Captures d'écran
 
@@ -34,7 +35,7 @@
 
 ## 📋 Liste des projets
 
-- **Taille de police dynamique** : Permettre aux utilisateurs d'ajuster la taille du texte pour une meilleure lisibilité.
+- ~~**Taille de police dynamique**~~ ✅ (v1.1.0)
 - **Sélection du texte** : Pouvoir sélectionner et copier du texte.
 - **Naviguer à la référence**: Pouvoir naviguer par référence depuis les lectures.
 - **Liturgie hors ligne sur plusieurs périodes** : Télécharger et stocker les textes liturgiques pour plusieurs jours afin de permettre une consultation hors ligne étendue.

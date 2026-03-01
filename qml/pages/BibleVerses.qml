@@ -9,6 +9,7 @@ import Sailfish.Share 1.0
 import harbour.org.aelf 1.0
 import "../components"
 import "../js/BibleHelper.js" as BibleHelper
+import ".." as Root
 
 Page {
     id: versesPage
@@ -65,6 +66,7 @@ Page {
     }
 
     SilicaFlickable {
+        id: flickable
         anchors.fill: parent
         contentHeight: column.height
 
@@ -89,7 +91,7 @@ Page {
                 text: ErrorManager.error
                 showBanner: ErrorManager.hasError
                 showRetry: ErrorManager.showRetry
-                
+
                 onRetryClicked: {
                     ErrorManager.retry()
                     versesModel.loadVerses()
@@ -107,13 +109,13 @@ Page {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 height: contentHeight
-                
+
                 model: versesModel
-                
+
                 delegate: ListItem {
                     id: verseItem
                     contentHeight: verseContent.height
-                    
+
                     menu: ContextMenu {
                         MenuItem {
                             text: qsTr("Copier")
@@ -124,7 +126,7 @@ Page {
                             onClicked: shareVerse(model.verseNumber, model.verseText)
                         }
                     }
-                    
+
                     Row {
                         id: verseContent
                         width: parent.width
@@ -133,37 +135,37 @@ Page {
                         anchors.leftMargin: Theme.horizontalPageMargin
                         anchors.right: parent.right
                         anchors.rightMargin: Theme.horizontalPageMargin
-                        
+
                         Label {
                             id: verseNumberLabel
                             text: model.verseNumber
                             color: Theme.secondaryHighlightColor
-                            font.pixelSize: Theme.fontSizeExtraSmall
+                            font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeExtraSmall)
                             font.bold: true
                             width: implicitWidth
                             anchors.top: parent.top
                             anchors.topMargin: Theme.paddingSmall
                         }
-                        
+
                         Label {
                             width: parent.width - verseNumberLabel.width - Theme.paddingSmall
                             text: model.verseText
                             wrapMode: Text.WordWrap
                             color: verseItem.highlighted ? Theme.highlightColor : Theme.primaryColor
-                            font.pixelSize: Theme.fontSizeMedium
+                            font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeMedium)
                         }
                     }
-                    
+
                     onClicked: copyVerse(model.verseNumber, model.verseText)
                 }
-                
+
                 ViewPlaceholder {
                     enabled: versesModel.count === 0
                     text: qsTr("Aucun verset disponible")
                     hintText: qsTr("Tirez vers le bas pour actualiser")
                 }
             }
-            
+
             Item {
                 width: parent.width
                 height: Theme.paddingLarge

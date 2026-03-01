@@ -38,168 +38,168 @@ Page {
       id: column
       width: parent.width
 
-      Headers.PageHeaderWithDate {
-        id: pageHeader
-        title: qsTr("Informations")
+        Headers.PageHeaderWithDate {
+          id: pageHeader
+          title: qsTr("Informations")
 
-        onDateChanged: {
-          informationModel.date = date
+          onDateChanged: {
+            informationModel.date = date
+          }
         }
-      }
 
-      Item {
-        width: parent.width
-        height: Theme.itemSizeMedium
-        visible: informationModel.loading
+        Item {
+          width: parent.width
+          height: Theme.itemSizeMedium
+          visible: informationModel.loading
 
-        BusyIndicator {
-          anchors.centerIn: parent
-          size: BusyIndicatorSize.Medium
-          running: informationModel.loading
+          BusyIndicator {
+            anchors.centerIn: parent
+            size: BusyIndicatorSize.Medium
+            running: informationModel.loading
+          }
         }
-      }
 
-      Loader {
-        width: parent.width
-        active: !informationModel.loading && !informationModel.empty
-                && informationModel.information
-        sourceComponent: Component {
-          Column {
-            width: parent.width
-
-            Item {
-              id: contentItem
+        Loader {
+          width: parent.width
+          active: !informationModel.loading && !informationModel.empty
+                  && informationModel.information
+          sourceComponent: Component {
+            Column {
               width: parent.width
-              height: contentColumn.height + Theme.paddingLarge * 2
 
-              Rectangle {
-                id: colorBar
-                anchors {
-                  left: parent.left
-                  top: parent.top
-                  bottom: parent.bottom
-                  topMargin: Theme.paddingMedium
-                  bottomMargin: Theme.paddingMedium
+              Item {
+                id: contentItem
+                width: parent.width
+                height: contentColumn.height + Theme.paddingLarge * 2
+
+                Rectangle {
+                  id: colorBar
+                  anchors {
+                    left: parent.left
+                    top: parent.top
+                    bottom: parent.bottom
+                    topMargin: Theme.paddingMedium
+                    bottomMargin: Theme.paddingMedium
+                  }
+                  width: Theme.paddingSmall
+                  radius: width / 2
+                  color: informationModel.information.color
                 }
-                width: Theme.paddingSmall
-                radius: width / 2
-                color: informationModel.information.color
+
+                Column {
+                  id: contentColumn
+                  anchors {
+                    left: colorBar.right
+                    right: parent.right
+                    top: parent.top
+                    leftMargin: Theme.horizontalPageMargin
+                    rightMargin: Theme.horizontalPageMargin
+                    topMargin: Theme.paddingMedium
+                  }
+                  spacing: Theme.paddingMedium
+
+                  Label {
+                    width: parent.width
+                    text: informationModel.information.liturgicalDayName
+                    font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeExtraLarge)
+                    color: Theme.highlightColor
+                    wrapMode: Text.WordWrap
+                  }
+
+                  Label {
+                    width: parent.width
+                    visible: informationModel.information.degree
+                    text: informationModel.information.degree
+                    font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeMedium)
+                    font.italic: true
+                    color: Theme.secondaryHighlightColor
+                    wrapMode: Text.WordWrap
+                  }
+                }
               }
 
-              Column {
-                id: contentColumn
-                anchors {
-                  left: colorBar.right
-                  right: parent.right
-                  top: parent.top
-                  leftMargin: Theme.horizontalPageMargin
-                  rightMargin: Theme.horizontalPageMargin
-                  topMargin: Theme.paddingMedium
-                }
-                spacing: Theme.paddingMedium
-
-                Label {
-                  width: parent.width
-                  text: informationModel.information.liturgicalDayName
-                  font.pixelSize: Theme.fontSizeExtraLarge
-                  color: Theme.highlightColor
-                  wrapMode: Text.WordWrap
-                }
-
-                Label {
-                  width: parent.width
-                  visible: informationModel.information.degree
-                  text: informationModel.information.degree
-                  font.pixelSize: Theme.fontSizeMedium
-                  font.italic: true
-                  color: Theme.secondaryHighlightColor
-                  wrapMode: Text.WordWrap
-                }
+              SectionHeader {
+                text: qsTr("Détails")
               }
-            }
 
-            SectionHeader {
-              text: qsTr("Détails")
-            }
+              DetailItem {
+                visible: informationModel.information.liturgicalTime
+                label: qsTr("Temps liturgique")
+                value: informationModel.information.liturgicalTime
+              }
 
-            DetailItem {
-              visible: informationModel.information.liturgicalTime
-              label: qsTr("Temps liturgique")
-              value: informationModel.information.liturgicalTime
-            }
+              DetailItem {
+                visible: informationModel.information.holiday
+                label: qsTr("Célébration")
+                value: informationModel.information.holiday
+              }
 
-            DetailItem {
-              visible: informationModel.information.holiday
-              label: qsTr("Célébration")
-              value: informationModel.information.holiday
-            }
+              DetailItem {
+                visible: informationModel.information.liturgicalZone
+                label: qsTr("Zone liturgique")
+                value: informationModel.information.liturgicalZone
+              }
 
-            DetailItem {
-              visible: informationModel.information.liturgicalZone
-              label: qsTr("Zone liturgique")
-              value: informationModel.information.liturgicalZone
-            }
+              DetailItem {
+                label: qsTr("Jour")
+                value: informationModel.information.day
+              }
 
-            DetailItem {
-              label: qsTr("Jour")
-              value: informationModel.information.day
-            }
+              DetailItem {
+                label: qsTr("Semaine")
+                value: informationModel.information.week
+              }
 
-            DetailItem {
-              label: qsTr("Semaine")
-              value: informationModel.information.week
-            }
+              DetailItem {
+                label: qsTr("Année liturgique")
+                value: informationModel.information.year
+              }
 
-            DetailItem {
-              label: qsTr("Année liturgique")
-              value: informationModel.information.year
-            }
+              SectionHeader {
+                text: qsTr("Résumé du jour")
+                visible: informationModel.information.line1
+                         || informationModel.information.line2
+                         || informationModel.information.line3
+              }
 
-            SectionHeader {
-              text: qsTr("Résumé du jour")
-              visible: informationModel.information.line1
-                       || informationModel.information.line2
-                       || informationModel.information.line3
-            }
+              Label {
+                x: Theme.horizontalPageMargin
+                width: parent.width - 2 * Theme.horizontalPageMargin
+                visible: informationModel.information.line1
+                text: informationModel.information.line1
+                font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeSmall)
+                color: Theme.primaryColor
+                wrapMode: Text.WordWrap
+              }
 
-            Label {
-              x: Theme.horizontalPageMargin
-              width: parent.width - 2 * Theme.horizontalPageMargin
-              visible: informationModel.information.line1
-              text: informationModel.information.line1
-              font.pixelSize: Theme.fontSizeSmall
-              color: Theme.primaryColor
-              wrapMode: Text.WordWrap
-            }
+              Label {
+                x: Theme.horizontalPageMargin
+                width: parent.width - 2 * Theme.horizontalPageMargin
+                visible: informationModel.information.line2
+                text: informationModel.information.line2
+                font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeSmall)
+                color: Theme.secondaryColor
+                wrapMode: Text.WordWrap
+              }
 
-            Label {
-              x: Theme.horizontalPageMargin
-              width: parent.width - 2 * Theme.horizontalPageMargin
-              visible: informationModel.information.line2
-              text: informationModel.information.line2
-              font.pixelSize: Theme.fontSizeSmall
-              color: Theme.secondaryColor
-              wrapMode: Text.WordWrap
-            }
-
-            Label {
-              x: Theme.horizontalPageMargin
-              width: parent.width - 2 * Theme.horizontalPageMargin
-              visible: informationModel.information.line3
-              text: informationModel.information.line3
-              font.pixelSize: Theme.fontSizeSmall
-              color: Theme.secondaryColor
-              wrapMode: Text.WordWrap
+              Label {
+                x: Theme.horizontalPageMargin
+                width: parent.width - 2 * Theme.horizontalPageMargin
+                visible: informationModel.information.line3
+                text: informationModel.information.line3
+                font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeSmall)
+                color: Theme.secondaryColor
+                wrapMode: Text.WordWrap
+              }
             }
           }
         }
-      }
 
-      Item {
-        width: 1
-        height: Theme.paddingLarge
+        Item {
+          width: 1
+          height: Theme.paddingLarge
+        }
       }
-    }
 
     ViewPlaceholder {
       enabled: !informationModel.loading && informationModel.empty

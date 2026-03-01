@@ -1,7 +1,7 @@
 Name:       harbour-aelf
 
 Summary:    AELF - Lectures du jour
-Version:    1.0.0
+Version:    1.1.0
 Release:    1
 License:    GPLv3+
 URL:        https://github.com/erwanlpfr/harbour-aelf
@@ -57,6 +57,10 @@ desktop-file-install --delete-original         --dir %{buildroot}%{_datadir}/app
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
+* Sun Mar 01 2026 Erwan - 1.1.0-1
+- Dynamic font size: adjustable via Settings slider (80%-160%)
+- Font size preference persists across app restarts
+
 * Sun Feb 02 2025 Erwan - 1.0.0-1
 - Initial release
 - Catholic application for daily readings, mass and liturgy of the hours

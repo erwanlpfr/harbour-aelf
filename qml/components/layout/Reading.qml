@@ -8,6 +8,7 @@ import Sailfish.Silica 1.0
 import harbour.org.aelf 1.0
 import "../../modules/Opal/Tabs" as Tabs
 import "../../js/ReadingHelper.js" as ReadingHelper
+import "../.." as Root
 
 Tabs.TabItem {
   id: root
@@ -41,7 +42,7 @@ Tabs.TabItem {
         width: parent.width
         wrapMode: Text.WordWrap
         font {
-          pixelSize: Theme.fontSizeLarge
+          pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeLarge)
           bold: true
         }
       }
@@ -54,7 +55,7 @@ Tabs.TabItem {
         wrapMode: Text.WordWrap
         textFormat: Text.RichText
         font {
-          pixelSize: Theme.fontSizeMedium
+          pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeMedium)
           italic: true
         }
       }
@@ -71,7 +72,7 @@ Tabs.TabItem {
         wrapMode: Text.WordWrap
         textFormat: Text.RichText
         font {
-          pixelSize: Theme.fontSizeMedium
+          pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeMedium)
           italic: true
         }
       }
@@ -83,7 +84,7 @@ Tabs.TabItem {
         wrapMode: Text.WordWrap
         horizontalAlignment: Text.AlignRight
         font {
-          pixelSize: Theme.fontSizeSmall
+          pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeSmall)
           italic: true
         }
       }
@@ -93,7 +94,10 @@ Tabs.TabItem {
         text: reading.introRead
         width: parent.width
         wrapMode: Text.WordWrap
-        font.italic: true
+        font {
+          pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeMedium)
+          italic: true
+        }
       }
 
       Label {
@@ -103,6 +107,7 @@ Tabs.TabItem {
         width: parent.width
         wrapMode: Text.WordWrap
         textFormat: Text.RichText
+        font.pixelSize: Root.AppSettings.scaledFont(Theme.fontSizeMedium)
       }
 
       Item {
