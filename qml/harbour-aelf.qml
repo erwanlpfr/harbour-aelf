@@ -6,7 +6,6 @@
 import QtQuick 2.6
 import Sailfish.Silica 1.0
 import "pages" as Pages
-import "js/DateHelper.js" as DateHelper
 
 ApplicationWindow {
   id: app
@@ -25,7 +24,7 @@ ApplicationWindow {
     id: hourLiturgyComponent
     Pages.HourLiturgy {}
   }
-  
+
   cover: Qt.resolvedUrl("cover/CoverPage.qml")
 
   allowedOrientations: defaultAllowedOrientations

@@ -7,9 +7,7 @@ import QtQuick 2.6
 import Sailfish.Silica 1.0
 import harbour.org.aelf 1.0
 import "../components/headers" as Headers
-import "../components/inputs" as Inputs
 import "../components/ui" as UI
-import "../components/layout" as Layout
 import "../js/DateHelper.js" as DateHelper
 import "../js/StringHelper.js" as StringHelper
 import "../modules/Opal/Tabs" as Tabs

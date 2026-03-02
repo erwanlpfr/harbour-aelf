@@ -6,7 +6,6 @@
 #include "bibleversesmodel.h"
 #include "bibleverse.h"
 #include "bibledatabase.h"
-#include "errorhandler.h"
 #include <QDebug>
 
 BibleVersesModel::BibleVersesModel(QObject* parent)

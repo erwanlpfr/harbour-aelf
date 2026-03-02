@@ -59,6 +59,10 @@ local.properties
 
 harbour-aelf
 
+# Generated IDE config (machine-specific paths)
+.clangd
+.qmlls.ini
+
 # Secrets and credentials
 .env
 .env.*

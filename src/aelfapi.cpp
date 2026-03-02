@@ -8,7 +8,6 @@
 #include "mass.h"
 #include "reading.h"
 #include "hourliturgy.h"
-#include "liturgicalcolorhelper.h"
 #include "aelfhourliturgyparser.h"
 #include "aelfmassparser.h"
 #include "aelfformatter.h"
