@@ -39,6 +39,7 @@
 - **Sélection du texte** : Pouvoir sélectionner et copier du texte.
 - **Naviguer à la référence**: Pouvoir naviguer par référence depuis les lectures.
 - **Liturgie hors ligne sur plusieurs périodes** : Télécharger et stocker les textes liturgiques pour plusieurs jours afin de permettre une consultation hors ligne étendue.
+- **Favoris pour la Bible** : Sauvegarder des versets ou passages bibliques en favoris pour y accéder rapidement.
 
 ## 📜 Héritage du code
 
