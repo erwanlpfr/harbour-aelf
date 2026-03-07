@@ -57,9 +57,11 @@ desktop-file-install --delete-original         --dir %{buildroot}%{_datadir}/app
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
-* Sun Mar 01 2026 Erwan - 1.1.0-1
+* Sat Mar 07 2026 Erwan - 1.1.0-1
+- Bible favorites: save and manage favorite verses
 - Dynamic font size: adjustable via Settings slider (80%-160%)
-- Font size preference persists across app restarts
+- Refreshed settings page
+- Fixed missing antiphon at psalms
 
 * Sun Feb 02 2025 Erwan - 1.0.0-1
 - Initial release

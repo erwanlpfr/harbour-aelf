@@ -13,6 +13,7 @@
 - **Messe quotidienne** : Lectures et prières complètes pour les messes quotidiennes.
 - **Liturgie des Heures** : Prières du matin, du soir et de la nuit.
 - **Bible** : Bible complète en français accessible hors ligne.
+- **Favoris Bible** : Sauvegardez vos versets préférés pour y accéder rapidement.
 - **Calendrier** : Calendrier liturgique avec les fêtes.
 - **Régional** : Prise en charge des différentes zones liturgiques.
 - **Taille de police dynamique** : Ajustez la taille du texte via les paramètres ou par geste de pincement.
