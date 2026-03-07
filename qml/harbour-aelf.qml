@@ -6,12 +6,17 @@
 import QtQuick 2.6
 import Sailfish.Silica 1.0
 import "pages" as Pages
+import "." as Root
 
 ApplicationWindow {
   id: app
 
-  property bool isSunday: new Date().getDay() === 0
-  property Component initialPageComponent: isSunday ? massComponent : hourLiturgyComponent
+  property Component initialPageComponent: {
+    var startPage = Root.AppSettings.currentStartPage
+    if (startPage === "mass") return massComponent
+    if (startPage === "hours") return hourLiturgyComponent
+    return new Date().getDay() === 0 ? massComponent : hourLiturgyComponent
+  }
 
   initialPage: initialPageComponent
   

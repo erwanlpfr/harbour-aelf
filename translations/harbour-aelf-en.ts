@@ -1331,6 +1331,26 @@ For more information about this application, contact the maintainer at https://g
         <translation>Settings</translation>
     </message>
     <message>
+        <source>Liturgie</source>
+        <translation>Liturgy</translation>
+    </message>
+    <message>
+        <source>Page de démarrage</source>
+        <translation>Start page</translation>
+    </message>
+    <message>
+        <source>Automatique (selon le jour)</source>
+        <translation>Automatic (based on day)</translation>
+    </message>
+    <message>
+        <source>Messe</source>
+        <translation>Mass</translation>
+    </message>
+    <message>
+        <source>Liturgie des Heures</source>
+        <translation>Liturgy of the Hours</translation>
+    </message>
+    <message>
         <source>Affichage</source>
         <translation>Display</translation>
     </message>

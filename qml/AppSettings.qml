@@ -15,9 +15,11 @@ QtObject {
 
         property string zone: "france"
         property string fontScale: "1.0"
+        property string startPage: "auto"
     }
 
     readonly property string currentZone: settings.zone
+    readonly property string currentStartPage: settings.startPage
     readonly property real currentFontScale: {
         var scale = parseFloat(settings.fontScale)
         if (isNaN(scale) || scale < 0.8 || scale > 1.6) return 1.0
@@ -35,5 +37,9 @@ QtObject {
     function setFontScale(newScale) {
         var clamped = Math.max(0.8, Math.min(1.6, newScale))
         settings.fontScale = clamped.toFixed(2)
+    }
+
+    function setStartPage(newStartPage) {
+        settings.startPage = newStartPage
     }
 }

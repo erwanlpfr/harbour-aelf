@@ -1331,6 +1331,26 @@ Pour plus d&apos;informations sur cette application, contacter le mainteneur de 
         <translation>Paramètres</translation>
     </message>
     <message>
+        <source>Liturgie</source>
+        <translation>Liturgie</translation>
+    </message>
+    <message>
+        <source>Page de démarrage</source>
+        <translation>Page de démarrage</translation>
+    </message>
+    <message>
+        <source>Automatique (selon le jour)</source>
+        <translation>Automatique (selon le jour)</translation>
+    </message>
+    <message>
+        <source>Messe</source>
+        <translation>Messe</translation>
+    </message>
+    <message>
+        <source>Liturgie des Heures</source>
+        <translation>Liturgie des Heures</translation>
+    </message>
+    <message>
         <source>Affichage</source>
         <translation>Affichage</translation>
     </message>

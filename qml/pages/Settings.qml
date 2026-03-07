@@ -27,10 +27,39 @@ Page {
         title: qsTr("Paramètres")
       }
 
+      SectionHeader {
+        text: qsTr("Liturgie")
+      }
+
       Inputs.ZoneCombobox {
         id: zoneCombobox
         value: Root.AppSettings.currentZone
         onValueChanged: Root.AppSettings.setZone(value)
+      }
+
+      ComboBox {
+        id: startPageCombobox
+        label: qsTr("Page de démarrage")
+        currentIndex: {
+          switch (Root.AppSettings.currentStartPage) {
+            case "mass": return 1
+            case "hours": return 2
+            default: return 0
+          }
+        }
+
+        menu: ContextMenu {
+          MenuItem { text: qsTr("Automatique (selon le jour)") }
+          MenuItem { text: qsTr("Messe") }
+          MenuItem { text: qsTr("Liturgie des Heures") }
+        }
+
+        onCurrentIndexChanged: {
+          var values = ["auto", "mass", "hours"]
+          if (currentIndex >= 0 && currentIndex < values.length) {
+            Root.AppSettings.setStartPage(values[currentIndex])
+          }
+        }
       }
 
       SectionHeader {
