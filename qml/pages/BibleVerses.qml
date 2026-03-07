@@ -20,6 +20,7 @@ Page {
     property string bookAbbreviation: ""
     property string bookCode: ""
     property int chapterNumber: 0
+    property int scrollToVerse: -1
     
     Clipboard {
         id: clipboard
@@ -39,6 +40,10 @@ Page {
     ShareAction {
         id: shareAction
         mimeType: "text/plain"
+    }
+
+    AppNotification {
+        id: favoriteNotification
     }
 
     BibleVersesModel {
@@ -62,6 +67,33 @@ Page {
     onChapterNumberChanged: {
         if (bookCode && chapterNumber > 0) {
             versesModel.loadVerses()
+        }
+    }
+
+    Timer {
+        id: scrollTimer
+        interval: 100
+        onTriggered: {
+            if (scrollToVerse > 0 && scrollToVerse <= versesModel.count) {
+                versesList.currentIndex = scrollToVerse - 1
+                var item = versesList.currentItem
+                if (item) {
+                    var mapped = item.mapToItem(flickable.contentItem, 0, 0)
+                    var maxY = flickable.contentHeight - flickable.height
+                    flickable.contentY = Math.max(0, Math.min(mapped.y - Theme.paddingLarge, maxY))
+                }
+                item.flash()
+                scrollToVerse = -1
+            }
+        }
+    }
+
+    Connections {
+        target: versesModel
+        onCountChanged: {
+            if (scrollToVerse > 0) {
+                scrollTimer.restart()
+            }
         }
     }
 
@@ -116,6 +148,25 @@ Page {
                     id: verseItem
                     contentHeight: verseContent.height
 
+                    function flash()
+                    {
+                        flashAnimation.start()
+                    }
+
+                    Rectangle {
+                        id: flashOverlay
+                        anchors.fill: parent
+                        color: Theme.highlightBackgroundColor
+                        opacity: 0
+
+                        SequentialAnimation {
+                            id: flashAnimation
+                            NumberAnimation { target: flashOverlay; property: "opacity"; to: 0.5; duration: 200 }
+                            PauseAnimation { duration: 300 }
+                            NumberAnimation { target: flashOverlay; property: "opacity"; to: 0; duration: 400 }
+                        }
+                    }
+
                     menu: ContextMenu {
                         MenuItem {
                             text: qsTr("Copier")
@@ -124,6 +175,16 @@ Page {
                         MenuItem {
                             text: qsTr("Partager")
                             onClicked: shareVerse(model.verseNumber, model.verseText)
+                        }
+                        MenuItem {
+                            text: qsTr("Ajouter aux favoris")
+                            onClicked: {
+                                Root.BibleSettings.addFavorite(versesPage.bookCode, versesPage.chapterNumber, model.verseNumber, versesPage.bookName, versesPage.bookAbbreviation)
+                                var ref = BibleHelper.formatVerseReference(versesPage.bookName, versesPage.chapterNumber, model.verseNumber)
+                                favoriteNotification.previewSummary = qsTr("Ajouté aux favoris")
+                                favoriteNotification.previewBody = ref
+                                favoriteNotification.publish()
+                            }
                         }
                     }
 

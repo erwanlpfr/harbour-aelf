@@ -250,6 +250,18 @@ QString getBookAbbreviation(const QString& code)
     return code;
 }
 
+QVariantMap BibleDatabase::getBookInfo(const QString& bookCode) const
+{
+    QVariantMap info;
+    if (m_bookMetadata.contains(bookCode)) {
+        const auto& meta = m_bookMetadata.value(bookCode);
+        info["name"] = meta.first;
+        info["abbreviation"] = getBookAbbreviation(bookCode);
+        info["chapterCount"] = meta.second;
+    }
+    return info;
+}
+
 QString BibleDatabase::getBookCodeFromAbbreviation(const QString& abbreviation) const
 {
     QList<BookMetadata> books = getUnifiedBookMetadata();

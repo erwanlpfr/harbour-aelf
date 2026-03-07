@@ -86,13 +86,12 @@ function getCurrentHourName() {
   return qsTr("Complies")
 }
 
-/**
- * Determines the initial page based on the current day of week.
- * Returns "mass" for Sunday, "hourLiturgy" for Monday-Saturday.
- * @returns {string} The page to navigate to
- */
-function getInitialPage() {
-  var day = new Date().getDay()
-  // Sunday is 0, Monday is 1, ..., Saturday is 6
-  return day === 0 ? "mass" : "hourLiturgy"
+function formatDate(isoDate) {
+  var d = new Date(isoDate)
+  return d.toLocaleDateString(Qt.locale(), "d MMM yyyy")
+}
+
+function formatDateTime(isoDate) {
+  var d = new Date(isoDate)
+  return d.toLocaleDateString(Qt.locale(), "d MMM yyyy") + " " + d.toLocaleTimeString(Qt.locale(), "HH:mm")
 }

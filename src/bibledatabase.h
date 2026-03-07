@@ -12,6 +12,7 @@
 #include <QList>
 #include <QMap>
 #include <QPair>
+#include <QVariantMap>
 
 class BibleBook;
 class BibleVerse;
@@ -30,6 +31,7 @@ public:
     QList<BibleVerse*> getVerses(const QString& bookCode, int chapter);
     
     Q_INVOKABLE QString getBookCodeFromAbbreviation(const QString& abbreviation) const;
+    Q_INVOKABLE QVariantMap getBookInfo(const QString& bookCode) const;
 
 signals:
     void initializationStarted();

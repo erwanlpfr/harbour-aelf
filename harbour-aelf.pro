@@ -47,6 +47,7 @@ SOURCES += \
 
 DISTFILES += qml/harbour-aelf.qml \
     qml/AppSettings.qml \
+    qml/BibleSettings.qml \
     qml/qmldir \
     qml/components/headers/PageHeaderWithDate.qml \
     qml/components/inputs/DatePicker.qml \
@@ -54,7 +55,9 @@ DISTFILES += qml/harbour-aelf.qml \
     qml/components/inputs/MassPicker.qml \
     qml/components/inputs/ZoneCombobox.qml \
     qml/components/Clipboard.qml \
+    qml/components/AppNotification.qml \
     qml/components/ErrorBanner.qml \
+    qml/components/FavoriteCard.qml \
     qml/components/ui/MainPullDownMenu.qml \
     qml/components/layout/Reading.qml \
     qml/cover/CoverPage.qml \
@@ -73,6 +76,7 @@ DISTFILES += qml/harbour-aelf.qml \
     qml/pages/Bible.qml \
     qml/pages/BibleChapters.qml \
     qml/pages/BibleVerses.qml \
+    qml/pages/BibleFavorites.qml \
     qml/js/DateHelper.js \
     qml/js/StringHelper.js \
     qml/js/BibleHelper.js \

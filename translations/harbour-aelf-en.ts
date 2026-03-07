@@ -4,14 +4,6 @@
 <context>
     <name>About</name>
     <message>
-        <source>AELF est une application liturgique fournissant les messes quotidiennes, les heures et les lectures pour la liturgie catholique.</source>
-        <translation>AELF is a liturgical application providing daily masses, hours and readings for Catholic liturgy.</translation>
-    </message>
-    <message>
-        <source>2026-%1 AELF Contributors</source>
-        <translation>2026-%1 AELF Contributors</translation>
-    </message>
-    <message>
         <source>Informations</source>
         <translation>Information</translation>
     </message>
@@ -24,16 +16,24 @@
         <translation>- Offline liturgy over multiple periods</translation>
     </message>
     <message>
-        <source>L&apos;application Harbour AELF est développée bénévolement avec le soutien d&apos;AELF (www.aelf.org), l&apos;Association Épiscopale pour la Liturgie Francophone.
+        <source>Application liturgique fournissant les messes quotidiennes, les heures et les lectures pour la liturgie catholique, basée sur les données publiques d&apos;aelf.org.</source>
+        <translation>A liturgical app providing daily masses, hours and readings for Catholic liturgy, based on public data from aelf.org.</translation>
+    </message>
+    <message>
+        <source>2026-%1 harbour-aelf Contributors</source>
+        <translation>2026-%1 harbour-aelf Contributors</translation>
+    </message>
+    <message>
+        <source>Cette application n&apos;est ni affiliée ni autorisée par l&apos;AELF (Association Épiscopale Liturgique pour les pays Francophones). Elle utilise l&apos;API publique d&apos;aelf.org.
 
-Textes liturgiques, logo et nom reproduits avec l&apos;aimable autorisation d&apos;AELF. Tous droits réservés. AELF n&apos;est pas responsable de cette application.
+Les textes liturgiques sont la propriété de l&apos;AELF. Le logo et le nom AELF sont utilisés à titre informatif uniquement.
 
 Pour plus d&apos;informations sur cette application, contacter le mainteneur de https://github.com/erwanlpfr/harbour-aelf</source>
-        <translation>The Harbour AELF application is developed voluntarily with the support of AELF (www.aelf.org), the Episcopal Association for Francophone Liturgy.
+        <translation>This app is neither affiliated with nor authorised by the AELF (Association Épiscopale Liturgique pour les pays Francophones). It uses the public API from aelf.org.
 
-Liturgical texts, logo and name reproduced with kind permission of AELF. All rights reserved. AELF is not responsible for this application.
+Liturgical texts are the property of the AELF. The AELF logo and name are used for informational purposes only.
 
-For more information about this application, contact the maintainer at https://github.com/erwanlpfr/harbour-aelf</translation>
+For more information about this app, contact the maintainer at https://github.com/erwanlpfr/harbour-aelf</translation>
     </message>
 </context>
 <context>
@@ -677,6 +677,21 @@ For more information about this application, contact the maintainer at https://g
     </message>
 </context>
 <context>
+    <name>BibleFavorites</name>
+    <message>
+        <source>Favoris</source>
+        <translation>Favourites</translation>
+    </message>
+    <message>
+        <source>Aucun favori</source>
+        <translation>No favourites</translation>
+    </message>
+    <message>
+        <source>Maintenez un verset pour l&apos;ajouter aux favoris</source>
+        <translation>Long-press a verse to add it to favourites</translation>
+    </message>
+</context>
+<context>
     <name>BibleVerses</name>
     <message>
         <source>Partager</source>
@@ -701,6 +716,14 @@ For more information about this application, contact the maintainer at https://g
     <message>
         <source>Tirez vers le bas pour actualiser</source>
         <translation>Pull down to refresh</translation>
+    </message>
+    <message>
+        <source>Ajouter aux favoris</source>
+        <translation>Add to favourites</translation>
+    </message>
+    <message>
+        <source>Ajouté aux favoris</source>
+        <translation>Added to favourites</translation>
     </message>
 </context>
 <context>
@@ -824,6 +847,17 @@ For more information about this application, contact the maintainer at https://g
     <message>
         <source>You are using a mobile data connection.</source>
         <translation>You are using a mobile data connection.</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteCard</name>
+    <message>
+        <source>Retirer des favoris</source>
+        <translation>Remove from favourites</translation>
+    </message>
+    <message>
+        <source>Suppression</source>
+        <translation>Removing</translation>
     </message>
 </context>
 <context>

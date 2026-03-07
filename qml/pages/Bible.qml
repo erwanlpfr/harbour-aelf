@@ -101,7 +101,7 @@ Page {
             }
             MenuItem {
                 text: qsTr("Favoris")
-                onClicked: console.log("Favorites functionality not implemented yet")
+                onClicked: pageStack.push(Qt.resolvedUrl("BibleFavorites.qml"))
             }
         }
 
