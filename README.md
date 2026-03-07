@@ -1,6 +1,8 @@
 # AELF - Harbour
 
-**Une application native pour Sailfish OS (Harbour) proposant le contenu liturgique catholique d'AELF.org, incluant la Bible et les lectures quotidiennes.**
+**Une application native pour Sailfish OS (Harbour) proposant le contenu liturgique catholique basé sur les données publiques d'aelf.org, incluant la Bible et les lectures quotidiennes.**
+
+> Cette application n'est ni affiliée ni autorisée par l'AELF. Les textes liturgiques sont la propriété de l'AELF. Le logo et le nom AELF sont utilisés à titre informatif.
 
 > 🇫🇷 Cette application est uniquement disponible en français car elle s'adresse principalement à la communauté catholique francophone.
 
@@ -103,7 +105,7 @@ Si vous rencontrez un bug dans l'application AELF, vous pouvez le signaler ici e
 
 ## 🙏 Remerciements
 
-- **AELF.org** pour le contenu liturgique.
+- **AELF.org** pour les données liturgiques publiques (non affilié).
 - **Le projet OPAL** pour les composants d'interface utilisateur.
 - **La communauté Sailfish OS**.
 - **Nathanael** (auteur de [aelf-flutter](https://gitlab.com/nathanael2/aelf-flutter)) pour l'idée originale et l'inspiration.

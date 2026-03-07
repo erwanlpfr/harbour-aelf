@@ -22,12 +22,12 @@ BuildRequires:  desktop-file-utils
 
 %description
 Application catholique pour lire les lectures du jour, la messe et la
-liturgie des heures depuis le site AELF (Association Épiscopale Liturgique
-pour les pays Francophones).
+liturgie des heures, basée sur les données publiques d'aelf.org.
+Non affiliée ni autorisée par l'AELF.
 
-Catholic application for daily readings, mass and liturgy of the hours
-from the AELF website (Association Épiscopale Liturgique pour les pays
-Francophones). Includes an offline French Bible.
+Catholic application for daily readings, mass and liturgy of the hours,
+based on public data from aelf.org. Not affiliated with or endorsed by AELF.
+Includes an offline French Bible.
 
 
 %prep
