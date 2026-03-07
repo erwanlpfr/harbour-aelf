@@ -30,6 +30,7 @@ SOURCES += \
   src/liturgicalcolorhelper.cpp \
   src/liturgybasemodel.cpp \
   src/aelfformatter.cpp \
+  src/aelftexts.cpp \
   src/liturgyrepository.cpp \
   src/liturgyservice.cpp \
   src/mass.cpp \
@@ -109,6 +110,8 @@ HEADERS += \
   src/liturgicalcolorhelper.h \
   src/liturgybasemodel.h \
   src/aelfformatter.h \
+  src/aelftexts.h \
+  src/htmlutils.h \
   src/liturgyidentifierkey.h \
   src/liturgyrepository.h \
   src/liturgyservice.h \

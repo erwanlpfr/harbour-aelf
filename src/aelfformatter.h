@@ -7,6 +7,7 @@
 #define AELFFORMATTER_H
 
 #include <QString>
+#include "aelftexts.h"
 
 class QJsonObject;
 
@@ -16,10 +17,6 @@ public:
     static QString stripHtmlTags(const QString& html);
     static QString addAntienneBefore(const QString& content);
     static QString capitalize(const QString& text);
-    static QString gloriaPatri();
-    static QString notrePereText();
-    static QString oraisonSuffix();
-    static QString reponsMarker();
     static QString appendReponsIfPresent(const QString& content, const QJsonObject& obj, const QString& key);
 };
 

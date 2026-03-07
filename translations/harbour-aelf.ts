@@ -43,8 +43,8 @@ Pour plus d&apos;informations sur cette application, contacter le mainteneur de 
         <translation>Antienne :</translation>
     </message>
     <message>
-        <source>Gloire au Père,...</source>
-        <translation>Gloire au Père,...</translation>
+        <source>Gloire au Père, et au Fils, et au Saint-Esprit, pour les siècles des siècles. Amen.</source>
+        <translation>Gloire au Père, et au Fils, et au Saint-Esprit, pour les siècles des siècles. Amen.</translation>
     </message>
     <message>
         <source>Notre Père, qui es aux cieux, &lt;br&gt;que ton nom soit sanctifié,&lt;br&gt;que ton règne vienne,&lt;br&gt;que ta volonté soit faite sur la terre comme au ciel.&lt;br&gt;Donne-nous aujourd&apos;hui notre pain de ce jour.&lt;br&gt;Pardonne-nous nos offenses,&lt;br&gt;comme nous pardonnons aussi à ceux qui nous ont offensés.&lt;br&gt;Et ne nous laisse pas entrer en tentation&lt;br&gt;mais délivre-nous du Mal.&lt;br&gt;&lt;br&gt;Amen</source>

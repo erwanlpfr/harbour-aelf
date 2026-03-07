@@ -103,7 +103,7 @@ Reading* AelfHourLiturgyParser::parsePsaumeInvitatoire(const QJsonObject& hour, 
     QString antienne = hour.value("antienne_invitatoire").toString();
     QString subtitle = AelfFormatter::addAntienneBefore(antienne);
     QString ref = inv["reference"].toString();
-    QString content = AelfFormatter::processHtml(inv["texte"].toString() + AelfFormatter::gloriaPatri());
+    QString content = AelfFormatter::processHtml(inv["texte"].toString() + HtmlUtils::p(AelfTexts::gloriaPatri()));
     
     return new Reading(
         Reading::PsaumeInvitatoire,
@@ -177,7 +177,7 @@ QList<Reading*> AelfHourLiturgyParser::parsePsalmsAndCantiques(const QJsonObject
             }
             
             QString subtitle = AelfFormatter::addAntienneBefore(antienne);
-            QString content = AelfFormatter::processHtml(psaume["texte"].toString() + AelfFormatter::gloriaPatri());
+            QString content = AelfFormatter::processHtml(psaume["texte"].toString() + HtmlUtils::p(AelfTexts::gloriaPatri()));
             
             bool isCanticle = ref.toLower().contains("cantique");
             Reading::ReadingType type = isCanticle ? Reading::Canticle : Reading::Psalm;
@@ -208,7 +208,7 @@ QList<Reading*> AelfHourLiturgyParser::parsePsalmsAndCantiques(const QJsonObject
             QJsonObject cantique = hour[cantiqueKey].toObject();
             QString antienne = findAntienne(hour, i);
             QString subtitle = AelfFormatter::addAntienneBefore(antienne);
-            QString content = AelfFormatter::processHtml(cantique["texte"].toString() + AelfFormatter::gloriaPatri());
+            QString content = AelfFormatter::processHtml(cantique["texte"].toString() + HtmlUtils::p(AelfTexts::gloriaPatri()));
             
             readings.append(new Reading(
                 Reading::Canticle,
@@ -332,7 +332,7 @@ Reading* AelfHourLiturgyParser::parseCantiqueMariale(const QJsonObject& hour, QO
     }
     
     QString subtitle = AelfFormatter::addAntienneBefore(antienne);
-    QString content = AelfFormatter::processHtml(cantique["texte"].toString() + AelfFormatter::gloriaPatri());
+    QString content = AelfFormatter::processHtml(cantique["texte"].toString() + HtmlUtils::p(AelfTexts::gloriaPatri()));
     
     return new Reading(
         Reading::CantiqueMariale,
@@ -380,7 +380,7 @@ Reading* AelfHourLiturgyParser::parseNotrePere(const QJsonObject& hour, QObject*
         QCoreApplication::translate("AelfHourLiturgyParser", "Notre Père"),
         QString(),
         QString(),
-        AelfFormatter::notrePereText(),
+        AelfTexts::notrePereText(),
         QString(),
         QString(),
         QString(),
@@ -391,7 +391,7 @@ Reading* AelfHourLiturgyParser::parseNotrePere(const QJsonObject& hour, QObject*
 
 Reading* AelfHourLiturgyParser::parseOraison(const QJsonObject& hour, QObject* parent)
 {
-    QString content = AelfFormatter::processHtml(hour["oraison"].toString()) + AelfFormatter::oraisonSuffix();
+    QString content = AelfFormatter::processHtml(hour["oraison"].toString()) + HtmlUtils::spacer() + AelfTexts::oraisonSuffix();
     
     return new Reading(
         Reading::Oraison,
