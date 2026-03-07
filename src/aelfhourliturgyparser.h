@@ -30,7 +30,6 @@ private:
     static Reading* parseOraison(const QJsonObject& hour, QObject* parent);
     
     static QString findAntienne(const QJsonObject& hour, int index);
-    static QString findPreviousAntienne(const QJsonObject& hour, int startIndex, const QString& title);
 };
 
 #endif // AELFHOURLITURGYPARSER_H

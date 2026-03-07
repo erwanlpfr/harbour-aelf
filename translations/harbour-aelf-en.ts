@@ -37,7 +37,19 @@ For more information about this application, contact the maintainer at https://g
     </message>
 </context>
 <context>
-    <name>AelfFormatter</name>
+    <name>AelfTexts</name>
+    <message>
+        <source>Antienne invitatoire</source>
+        <translation>Invitatory antiphon</translation>
+    </message>
+    <message>
+        <source>Hymne</source>
+        <translation>Hymn</translation>
+    </message>
+    <message>
+        <source>Verset</source>
+        <translation>Verse</translation>
+    </message>
     <message>
         <source>Gloire au Père, et au Fils, et au Saint-Esprit, pour les siècles des siècles. Amen.</source>
         <translation>Glory to the Father, and to the Son, and to the Holy Spirit, for ever and ever. Amen.</translation>
@@ -51,23 +63,8 @@ For more information about this application, contact the maintainer at https://g
         <translation>May the Lord bless us, protect us from all evil, and bring us to everlasting life.&lt;br&gt;Amen.</translation>
     </message>
     <message>
-        <source>Répons</source>
-        <translation>Responsory</translation>
-    </message>
-    <message>
         <source>Antienne:</source>
         <translation>Antiphon:</translation>
-    </message>
-</context>
-<context>
-    <name>AelfHourLiturgyParser</name>
-    <message>
-        <source>Notre Père</source>
-        <translation>Our Father</translation>
-    </message>
-    <message>
-        <source>Oraison et bénédiction</source>
-        <translation>Prayer and blessing</translation>
     </message>
     <message>
         <source>Parole de Dieu</source>
@@ -78,16 +75,16 @@ For more information about this application, contact the maintainer at https://g
         <translation>Intercession</translation>
     </message>
     <message>
-        <source>Antienne invitatoire</source>
-        <translation>Invitatory antiphon</translation>
+        <source>Notre Père</source>
+        <translation>Our Father</translation>
     </message>
     <message>
-        <source>Verset</source>
-        <translation>Verse</translation>
+        <source>Oraison et bénédiction</source>
+        <translation>Prayer and blessing</translation>
     </message>
     <message>
-        <source>Hymne</source>
-        <translation>Hymn</translation>
+        <source>Répons</source>
+        <translation>Responsory</translation>
     </message>
 </context>
 <context>

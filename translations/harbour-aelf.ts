@@ -37,10 +37,18 @@ Pour plus d&apos;informations sur cette application, contacter le mainteneur de 
     </message>
 </context>
 <context>
-    <name>AelfFormatter</name>
+    <name>AelfTexts</name>
     <message>
-        <source>Antienne:</source>
-        <translation>Antienne :</translation>
+        <source>Antienne invitatoire</source>
+        <translation>Antienne invitatoire</translation>
+    </message>
+    <message>
+        <source>Hymne</source>
+        <translation>Hymne</translation>
+    </message>
+    <message>
+        <source>Verset</source>
+        <translation>Verset</translation>
     </message>
     <message>
         <source>Gloire au Père, et au Fils, et au Saint-Esprit, pour les siècles des siècles. Amen.</source>
@@ -55,19 +63,8 @@ Pour plus d&apos;informations sur cette application, contacter le mainteneur de 
         <translation>Que le Seigneur nous bénisse, qu&apos;il nous garde de tout mal, et nous conduise à la vie éternelle.&lt;br&gt;Amen.</translation>
     </message>
     <message>
-        <source>Répons</source>
-        <translation>Répons</translation>
-    </message>
-</context>
-<context>
-    <name>AelfHourLiturgyParser</name>
-    <message>
-        <source>Notre Père</source>
-        <translation>Notre Père</translation>
-    </message>
-    <message>
-        <source>Oraison et bénédiction</source>
-        <translation>Oraison et bénédiction</translation>
+        <source>Antienne:</source>
+        <translation>Antienne :</translation>
     </message>
     <message>
         <source>Parole de Dieu</source>
@@ -78,16 +75,16 @@ Pour plus d&apos;informations sur cette application, contacter le mainteneur de 
         <translation>Intercession</translation>
     </message>
     <message>
-        <source>Antienne invitatoire</source>
-        <translation>Antienne invitatoire</translation>
+        <source>Notre Père</source>
+        <translation>Notre Père</translation>
     </message>
     <message>
-        <source>Verset</source>
-        <translation>Verset</translation>
+        <source>Oraison et bénédiction</source>
+        <translation>Oraison et bénédiction</translation>
     </message>
     <message>
-        <source>Hymne</source>
-        <translation>Hymne</translation>
+        <source>Répons</source>
+        <translation>Répons</translation>
     </message>
 </context>
 <context>

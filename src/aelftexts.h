@@ -18,9 +18,14 @@ namespace AelfLiturgy {
 
 namespace AelfTexts {
     QString gloriaPatri();
-    QString notrePereText();
+    QString notrePere();
     QString oraisonSuffix();
     QString reponsMarker();
+    QString antienneLabel();
+    QString paroleDeDieu();
+    QString intercession();
+    QString notrePereLabel();
+    QString oraisonLabel();
 }
 
 #endif // AELFTEXTS_H

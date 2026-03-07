@@ -8,14 +8,14 @@
 
 QString AelfTexts::gloriaPatri()
 {
-    return QCoreApplication::translate("AelfFormatter",
+    return QCoreApplication::translate("AelfTexts",
         "Gloire au Père, et au Fils, et au Saint-Esprit, "
         "pour les siècles des siècles. Amen.");
 }
 
-QString AelfTexts::notrePereText()
+QString AelfTexts::notrePere()
 {
-    return QCoreApplication::translate("AelfFormatter",
+    return QCoreApplication::translate("AelfTexts",
         "Notre Père, qui es aux cieux, <br>"
         "que ton nom soit sanctifié,<br>"
         "que ton règne vienne,<br>"
@@ -31,13 +31,38 @@ QString AelfTexts::notrePereText()
 
 QString AelfTexts::oraisonSuffix()
 {
-    return QCoreApplication::translate("AelfFormatter",
+    return QCoreApplication::translate("AelfTexts",
         "Que le Seigneur nous bénisse, qu'il nous garde de tout mal, "
         "et nous conduise à la vie éternelle.<br>Amen."
     );
 }
 
+QString AelfTexts::antienneLabel()
+{
+    return QCoreApplication::translate("AelfTexts", "Antienne:");
+}
+
+QString AelfTexts::paroleDeDieu()
+{
+    return QCoreApplication::translate("AelfTexts", "Parole de Dieu");
+}
+
+QString AelfTexts::intercession()
+{
+    return QCoreApplication::translate("AelfTexts", "Intercession");
+}
+
+QString AelfTexts::notrePereLabel()
+{
+    return QCoreApplication::translate("AelfTexts", "Notre Père");
+}
+
+QString AelfTexts::oraisonLabel()
+{
+    return QCoreApplication::translate("AelfTexts", "Oraison et bénédiction");
+}
+
 QString AelfTexts::reponsMarker()
 {
-    return AelfLiturgy::reponsBlock(QCoreApplication::translate("AelfFormatter", "Répons"));
+    return AelfLiturgy::reponsBlock(QCoreApplication::translate("AelfTexts", "Répons"));
 }

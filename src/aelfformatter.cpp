@@ -36,7 +36,7 @@ QString AelfFormatter::stripHtmlTags(const QString& html)
     return QString(html).remove(re);
 }
 
-QString AelfFormatter::addAntienneBefore(const QString& content)
+QString AelfFormatter::formatAntienne(const QString& content, AntiennePosition pos)
 {
     if (content.isEmpty()) {
         return QString();
@@ -46,7 +46,8 @@ QString AelfFormatter::addAntienneBefore(const QString& content)
     cleanContent.replace("</p>", "");
     cleanContent = cleanContent.trimmed();
 
-    return accent(QCoreApplication::translate("AelfFormatter", "Antienne:")) + " " + cleanContent;
+    QString text = accent(AelfTexts::antienneLabel()) + " " + cleanContent;
+    return pos == AntiennePosition::After ? "<br><p><i>" + text + "</i></p>" : text;
 }
 
 QString AelfFormatter::capitalize(const QString& text)
