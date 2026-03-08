@@ -217,6 +217,15 @@ Page {
                         }
                     }
 
+                    onHeightChanged: {
+                        if (menuOpen) {
+                            var itemBottom = verseItem.mapToItem(flickable.contentItem, 0, 0).y + height
+                            if (itemBottom > flickable.contentY + flickable.height) {
+                                flickable.contentY = Math.min(itemBottom - flickable.height, flickable.contentHeight - flickable.height)
+                            }
+                        }
+                    }
+
                     onClicked: copyVerse(model.verseNumber, model.verseText)
                 }
 
