@@ -40,7 +40,6 @@
 
 - **Naviguer à la référence**: Pouvoir naviguer par référence depuis les lectures.
 - **Liturgie hors ligne sur plusieurs périodes** : Télécharger et stocker les textes liturgiques pour plusieurs jours afin de permettre une consultation hors ligne étendue.
-- **Favoris pour la Bible** : Sauvegarder des versets ou passages bibliques en favoris pour y accéder rapidement.
 - **Investiguer l'API Epitre** : Comparer l'API actuelle (`api.aelf.org/v1/{office}/{date}/{zone}`) avec l'API Android (`api.app.epitre.co/{version}/office/{name}/{date}.json`) qui retourne des données pré-structurées (antiennes positionnées, doxologie, titres formatés).
 
 ## 📜 Héritage du code
