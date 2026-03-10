@@ -7,7 +7,6 @@
 #define LITURGICALCOLORHELPER_H
 
 #include <QColor>
-#include <QObject>
 #include <QString>
 
 class LiturgicalColorHelper {

@@ -22,7 +22,7 @@ AELFAPI::AELFAPI(QObject* parent) : QObject(parent), m_manager(new QNetworkAcces
 }
 
 QNetworkReply* AELFAPI::makeRequest(const QString& endpoint, const QDate& date, const QString& zone, const QString& requestType, const QString& hourType) {
-    QString url = QString("%1%2/%3/%4").arg(m_baseUrl, endpoint, date.toString("yyyy-MM-dd"), zone);
+    QString url = QString("%1%2/%3/%4").arg(m_baseUrl, endpoint, date.toString(Qt::ISODate), zone);
     QNetworkRequest request(url);
     request.setRawHeader("accept", "*/*");
     QNetworkReply* reply = m_manager->get(request);
@@ -215,7 +215,7 @@ QJsonObject* AELFAPI::extractInformations(const QJsonObject& json) {
 }
 
 QString AELFAPI::getRequestKey(const RequestInfo& requestInfo) const {
-    return QString("%1_%2_%3_%4").arg(requestInfo.requestType, requestInfo.date.toString("yyyy-MM-dd"), 
+    return QString("%1_%2_%3_%4").arg(requestInfo.requestType, requestInfo.date.toString(Qt::ISODate),
                                      requestInfo.zone, requestInfo.hourType);
 }
 

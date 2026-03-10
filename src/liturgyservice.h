@@ -12,7 +12,6 @@
 #include <QString>
 #include "hourliturgy.h"
 
-class QJsonObject;
 class AELFAPI;
 class Information;
 class Mass;
