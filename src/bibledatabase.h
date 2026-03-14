@@ -6,12 +6,12 @@
 #ifndef BIBLEDATABASE_H
 #define BIBLEDATABASE_H
 
-#include <QObject>
-#include <QSqlDatabase>
-#include <QString>
 #include <QList>
 #include <QMap>
+#include <QObject>
 #include <QPair>
+#include <QSqlDatabase>
+#include <QString>
 #include <QVariantMap>
 
 class BibleBook;
@@ -20,34 +20,36 @@ class BibleVerse;
 class BibleDatabase : public QObject {
     Q_OBJECT
 
-public:
+  public:
     static BibleDatabase* instance();
-    
+
     bool initialize();
-    bool isInitialized() const { return m_initialized; }
+    bool isInitialized() const {
+        return m_initialized;
+    }
     Q_INVOKABLE void ensureInitialized();
-    
+
     QList<BibleBook*> getBooks();
     QList<BibleVerse*> getVerses(const QString& bookCode, int chapter);
-    
+
     Q_INVOKABLE QString getBookCodeFromAbbreviation(const QString& abbreviation) const;
     Q_INVOKABLE QVariantMap getBookInfo(const QString& bookCode) const;
 
-signals:
+  signals:
     void initializationStarted();
     void initializationCompleted(bool success);
     void initializationFailed(const QString& error);
 
-private:
+  private:
     explicit BibleDatabase(QObject* parent = nullptr);
     ~BibleDatabase();
-    
+
     QString getDatabasePath() const;
     void loadBookMetadata();
     bool validateDatabaseStructure();
-    
+
     static BibleDatabase* s_instance;
-    
+
     QSqlDatabase m_database;
     bool m_initialized;
     bool m_initializing;

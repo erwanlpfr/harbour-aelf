@@ -6,29 +6,29 @@
 #include "readingtabmodel.h"
 #include "reading.h"
 #include "sailfishapp.h"
+#include <QCoreApplication>
 #include <QDebug>
+#include <QMap>
 #include <QQmlComponent>
 #include <QQmlContext>
 #include <QQmlEngine>
-#include <QCoreApplication>
-#include <QMap>
 
 QQmlEngine* ReadingTabModel::s_engine = nullptr;
 
 void ReadingTabModel::setEngine(QQmlEngine* engine) {
-  s_engine = engine;
+    s_engine = engine;
 }
 
 QQmlEngine* ReadingTabModel::engine() {
-  return s_engine;
+    return s_engine;
 }
 
-QString ReadingTabModel::getTitleForReading(Reading* reading)
-{
-    if (!reading) return QString();
-    
+QString ReadingTabModel::getTitleForReading(Reading* reading) {
+    if (!reading)
+        return QString();
+
     Reading::ReadingType type = reading->readingType();
-    
+
     if (type == Reading::Psalm) {
         QString reference = reading->reference();
         if (reference.startsWith("Ps ")) {
@@ -36,17 +36,18 @@ QString ReadingTabModel::getTitleForReading(Reading* reading)
         }
         return QCoreApplication::translate("Reading", "Psaume") + " " + reference;
     }
-    
+
     if (type == Reading::Canticle) {
         QString title = reading->title();
         return title.isEmpty() ? QCoreApplication::translate("Reading", "Cantique") : title;
     }
-    
+
     if (type == Reading::CantiqueMariale) {
         QString title = reading->title();
-        return title.isEmpty() ? QCoreApplication::translate("Reading", "Cantique de Marie") : title;
+        return title.isEmpty() ? QCoreApplication::translate("Reading", "Cantique de Marie")
+                               : title;
     }
-    
+
     static const QMap<Reading::ReadingType, const char*> typeNames = {
         {Reading::Unknown, QT_TRANSLATE_NOOP("Reading", "Inconnu")},
         {Reading::Lecture1, QT_TRANSLATE_NOOP("Reading", "Première Lecture")},
@@ -79,61 +80,57 @@ QString ReadingTabModel::getTitleForReading(Reading* reading)
         {Reading::NotrePere, QT_TRANSLATE_NOOP("Reading", "Notre Père")},
         {Reading::Oraison, QT_TRANSLATE_NOOP("Reading", "Oraison et bénédiction")},
         {Reading::TeDeum, QT_TRANSLATE_NOOP("Reading", "Te Deum")},
-        {Reading::Messes, QT_TRANSLATE_NOOP("Reading", "Messes")}
-    };
-    
+        {Reading::Messes, QT_TRANSLATE_NOOP("Reading", "Messes")}};
+
     auto it = typeNames.find(type);
-    return it != typeNames.end() 
-        ? QCoreApplication::translate("Reading", it.value())
-        : QString();
+    return it != typeNames.end() ? QCoreApplication::translate("Reading", it.value()) : QString();
 }
 
-ReadingTabModel::ReadingTabModel(QObject *parent)
-    : QAbstractListModel(parent) {
-  m_roles[TitleRole] = "title";
-  m_roles[SourceRole] = "source";
-  m_roles[ReadingRole] = "reading";
+ReadingTabModel::ReadingTabModel(QObject* parent) : QAbstractListModel(parent) {
+    m_roles[TitleRole] = "title";
+    m_roles[SourceRole] = "source";
+    m_roles[ReadingRole] = "reading";
 }
 
-int ReadingTabModel::rowCount(const QModelIndex &parent) const {
-  Q_UNUSED(parent)
-  return m_readings.count();
+int ReadingTabModel::rowCount(const QModelIndex& parent) const {
+    Q_UNUSED(parent)
+    return m_readings.count();
 }
 
-QVariant ReadingTabModel::data(const QModelIndex &index, int role) const {
-  QVariant result = QVariant();
+QVariant ReadingTabModel::data(const QModelIndex& index, int role) const {
+    QVariant result = QVariant();
 
-  if (!index.isValid() || index.row() >= m_readings.count()) {
+    if (!index.isValid() || index.row() >= m_readings.count()) {
+        return result;
+    }
+
+    Reading* reading = m_readings[index.row()];
+
+    switch (role) {
+    case TitleRole:
+        result = getTitleForReading(reading);
+        break;
+    case SourceRole:
+        result = QUrl(SailfishApp::pathTo("qml/components/layout/Reading.qml"));
+        break;
+    case ReadingRole:
+        result = QVariant::fromValue(reading);
+        break;
+    }
+
     return result;
-  }
-
-  Reading *reading = m_readings[index.row()];
-
-  switch (role) {
-  case TitleRole:
-    result = getTitleForReading(reading);
-    break;
-  case SourceRole:
-    result = QUrl(SailfishApp::pathTo("qml/components/layout/Reading.qml"));
-    break;
-  case ReadingRole:
-    result = QVariant::fromValue(reading);
-    break;
-  }
-
-  return result;
 }
 
-QHash<int, QByteArray> ReadingTabModel::roleNames() const { 
-  return m_roles; 
+QHash<int, QByteArray> ReadingTabModel::roleNames() const {
+    return m_roles;
 }
 
-void ReadingTabModel::setReadings(QList<Reading *> readings) {
-  beginResetModel();
-  m_readings = readings;
-  endResetModel();
+void ReadingTabModel::setReadings(QList<Reading*> readings) {
+    beginResetModel();
+    m_readings = readings;
+    endResetModel();
 }
 
-QList<Reading *> ReadingTabModel::readings() const { 
-  return m_readings; 
+QList<Reading*> ReadingTabModel::readings() const {
+    return m_readings;
 }

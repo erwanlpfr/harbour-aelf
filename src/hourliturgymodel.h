@@ -6,10 +6,10 @@
 #ifndef HOURLITURGYMODEL_H
 #define HOURLITURGYMODEL_H
 
-#include "informationmodel.h"
 #include "hourliturgy.h"
-#include <QObject>
+#include "informationmodel.h"
 #include "liturgyidentifierkey.h"
+#include <QObject>
 
 class HourLiturgyModel : public InformationModel {
     Q_OBJECT
@@ -17,7 +17,7 @@ class HourLiturgyModel : public InformationModel {
     Q_PROPERTY(HourLiturgy::HourType type READ type WRITE setType NOTIFY typeChanged)
     Q_PROPERTY(HourLiturgy* hourLiturgy READ hourLiturgy NOTIFY hourLiturgyChanged)
 
-public:
+  public:
     explicit HourLiturgyModel(QObject* parent = nullptr);
 
     HourLiturgy::HourType type() const;
@@ -25,17 +25,18 @@ public:
 
     HourLiturgy* hourLiturgy() const;
 
-signals:
+  signals:
     void typeChanged();
     void hourLiturgyChanged();
 
-private slots:
-    void onHourLiturgyChanged(const LiturgyIdentifierKey& key, HourLiturgy::HourType type, HourLiturgy* hourLiturgy);
+  private slots:
+    void onHourLiturgyChanged(const LiturgyIdentifierKey& key, HourLiturgy::HourType type,
+                              HourLiturgy* hourLiturgy);
 
-protected:
+  protected:
     void loadData() override;
 
-private:
+  private:
     HourLiturgy::HourType m_type;
     HourLiturgy* m_hourLiturgy;
 };

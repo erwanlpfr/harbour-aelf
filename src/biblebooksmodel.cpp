@@ -8,9 +8,7 @@
 #include "bibledatabase.h"
 #include <QDebug>
 
-BibleBooksModel::BibleBooksModel(QObject* parent)
-    : QAbstractListModel(parent)
-{
+BibleBooksModel::BibleBooksModel(QObject* parent) : QAbstractListModel(parent) {
     m_roles[CodeRole] = "code";
     m_roles[NameRole] = "name";
     m_roles[AbbreviationRole] = "abbreviation";
@@ -18,21 +16,18 @@ BibleBooksModel::BibleBooksModel(QObject* parent)
     m_roles[SectionRole] = "section";
 }
 
-BibleBooksModel::~BibleBooksModel()
-{
+BibleBooksModel::~BibleBooksModel() {
     qDeleteAll(m_allBooks);
 }
 
-int BibleBooksModel::rowCount(const QModelIndex& parent) const
-{
+int BibleBooksModel::rowCount(const QModelIndex& parent) const {
     if (parent.isValid()) {
         return 0;
     }
     return m_filteredBooks.count();
 }
 
-QVariant BibleBooksModel::data(const QModelIndex& index, int role) const
-{
+QVariant BibleBooksModel::data(const QModelIndex& index, int role) const {
     if (!index.isValid() || index.row() >= m_filteredBooks.count()) {
         return QVariant();
     }
@@ -55,13 +50,11 @@ QVariant BibleBooksModel::data(const QModelIndex& index, int role) const
     }
 }
 
-QHash<int, QByteArray> BibleBooksModel::roleNames() const
-{
+QHash<int, QByteArray> BibleBooksModel::roleNames() const {
     return m_roles;
 }
 
-void BibleBooksModel::setSection(const QString& section)
-{
+void BibleBooksModel::setSection(const QString& section) {
     if (m_section != section) {
         m_section = section;
         filterBooks();
@@ -69,14 +62,13 @@ void BibleBooksModel::setSection(const QString& section)
     }
 }
 
-void BibleBooksModel::loadBooks()
-{
+void BibleBooksModel::loadBooks() {
     beginResetModel();
-    
+
     qDeleteAll(m_allBooks);
     m_allBooks.clear();
     m_filteredBooks.clear();
-    
+
     BibleDatabase* db = BibleDatabase::instance();
     if (!db->isInitialized()) {
         if (!db->initialize()) {
@@ -85,17 +77,16 @@ void BibleBooksModel::loadBooks()
             return;
         }
     }
-    
+
     m_allBooks = db->getBooks();
     filterBooks();
-    
+
     endResetModel();
 }
 
-void BibleBooksModel::filterBooks()
-{
+void BibleBooksModel::filterBooks() {
     m_filteredBooks.clear();
-    
+
     if (m_section.isEmpty()) {
         m_filteredBooks = m_allBooks;
     } else {

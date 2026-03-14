@@ -13,26 +13,15 @@
 class Information : public QObject {
     Q_OBJECT
 
-public:
+  public:
     explicit Information(QObject* parent = nullptr);
     explicit Information(const QJsonObject& informationObject, QObject* parent = nullptr);
-    explicit Information(
-        const QString& date,
-        const QString& liturgicalZone,
-        const QString& color,
-        int year,
-        const QString& liturgicalTime,
-        int week,
-        int day,
-        const QString& liturgicalDayName,
-        const QString& holiday,
-        const QString& degree,
-        const QString& line1,
-        const QString& line2,
-        const QString& line3,
-        const QString& color2,
-        const QString& color3,
-        QObject* parent = nullptr);
+    explicit Information(const QString& date, const QString& liturgicalZone, const QString& color,
+                         int year, const QString& liturgicalTime, int week, int day,
+                         const QString& liturgicalDayName, const QString& holiday,
+                         const QString& degree, const QString& line1, const QString& line2,
+                         const QString& line3, const QString& color2, const QString& color3,
+                         QObject* parent = nullptr);
 
     Q_PROPERTY(QString date READ date CONSTANT)
     Q_PROPERTY(QString liturgicalZone READ location CONSTANT)
@@ -66,7 +55,7 @@ public:
     QColor color2() const;
     QColor color3() const;
 
-private:
+  private:
     QString m_date;
     QString m_liturgicalZone;
     QColor m_color;

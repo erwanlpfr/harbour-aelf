@@ -6,31 +6,31 @@
 #ifndef INFORMATIONMODEL_H
 #define INFORMATIONMODEL_H
 
-#include "liturgybasemodel.h"
 #include "information.h"
-#include <QObject>
+#include "liturgybasemodel.h"
 #include "liturgyidentifierkey.h"
+#include <QObject>
 
 class InformationModel : public LiturgyBaseModel {
     Q_OBJECT
 
     Q_PROPERTY(Information* information READ information NOTIFY informationChanged)
 
-public:
+  public:
     explicit InformationModel(QObject* parent = nullptr);
 
     Information* information() const;
 
-signals:
+  signals:
     void informationChanged();
 
-private slots:
+  private slots:
     void onInformationChanged(const LiturgyIdentifierKey& key, Information* information);
 
-protected:
+  protected:
     void loadData() override;
 
-private:
+  private:
     Information* m_information;
 };
 

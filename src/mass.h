@@ -17,14 +17,14 @@ class Mass : public QObject {
     Q_PROPERTY(QString name READ name CONSTANT)
     Q_PROPERTY(ReadingTabModel* readingsModel READ readingsModel CONSTANT)
 
-public:
+  public:
     explicit Mass(QObject* parent = nullptr);
     explicit Mass(const QString& name, QList<Reading*> readings, QObject* parent = nullptr);
 
     QString name() const;
     ReadingTabModel* readingsModel() const;
 
-private:
+  private:
     QString m_name;
     ReadingTabModel* m_readingsModel;
 };

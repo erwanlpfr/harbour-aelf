@@ -21,7 +21,7 @@ class LiturgyBaseModel : public QObject {
     Q_PROPERTY(QString error READ error NOTIFY errorChanged)
     Q_PROPERTY(bool empty READ empty NOTIFY emptyChanged)
 
-public:
+  public:
     explicit LiturgyBaseModel(QObject* parent = nullptr);
 
     QDate date() const;
@@ -39,14 +39,14 @@ public:
     bool empty() const;
     void setEmpty(bool empty);
 
-signals:
+  signals:
     void dateChanged();
     void zoneChanged();
     void loadingChanged();
     void errorChanged();
     void emptyChanged();
 
-protected:
+  protected:
     LiturgyRepository* m_liturgyRepository;
     QDate m_date;
     QString m_zone;

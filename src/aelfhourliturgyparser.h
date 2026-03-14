@@ -6,15 +6,16 @@
 #ifndef AELFHOURLITURGYPARSER_H
 #define AELFHOURLITURGYPARSER_H
 
+#include "reading.h"
 #include <QJsonObject>
 #include <QList>
-#include "reading.h"
 
 class AelfHourLiturgyParser {
-public:
-    static QList<Reading*> parse(const QJsonObject& json, const QString& hourType, QObject* parent = nullptr);
+  public:
+    static QList<Reading*> parse(const QJsonObject& json, const QString& hourType,
+                                 QObject* parent = nullptr);
 
-private:
+  private:
     static Reading* parseIntroduction(const QJsonObject& hour, QObject* parent);
     static Reading* parsePsaumeInvitatoire(const QJsonObject& hour, QObject* parent);
     static Reading* parseHymne(const QJsonObject& hour, QObject* parent);
@@ -28,7 +29,7 @@ private:
     static Reading* parseIntercession(const QJsonObject& hour, QObject* parent);
     static Reading* parseNotrePere(const QJsonObject& hour, QObject* parent);
     static Reading* parseOraison(const QJsonObject& hour, QObject* parent);
-    
+
     static QString findAntienne(const QJsonObject& hour, int index);
 };
 

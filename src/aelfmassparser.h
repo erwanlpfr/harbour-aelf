@@ -6,16 +6,16 @@
 #ifndef AELFMASSPARSER_H
 #define AELFMASSPARSER_H
 
+#include "reading.h"
 #include <QJsonArray>
 #include <QJsonObject>
 #include <QList>
-#include "reading.h"
 
 class AelfMassParser {
-public:
+  public:
     static QList<Reading*> parseReadings(const QJsonArray& lectures, QObject* parent = nullptr);
 
-private:
+  private:
     static Reading* parseReading(const QJsonObject& lecture, QObject* parent);
     static Reading::ReadingType detectReadingType(const QString& type, bool hasGospelVerse);
     static QList<Reading*> handleGospelVariants(const QList<QJsonObject>& gospels, QObject* parent);

@@ -6,8 +6,8 @@
 #ifndef HOURLITURGY_H
 #define HOURLITURGY_H
 
-#include <QObject>
 #include <QList>
+#include <QObject>
 #include <QString>
 
 class Reading;
@@ -18,16 +18,8 @@ class HourLiturgy : public QObject {
     Q_PROPERTY(QString type READ type CONSTANT)
     Q_PROPERTY(ReadingTabModel* readingsModel READ readingsModel CONSTANT)
 
-public:
-    enum HourType {
-        Compline,
-        Lauds,
-        Lectures,
-        None,
-        Sext,
-        Terce,
-        Vespers
-    };
+  public:
+    enum HourType { Compline, Lauds, Lectures, None, Sext, Terce, Vespers };
     Q_ENUMS(HourType)
 
     explicit HourLiturgy(QObject* parent = nullptr);
@@ -38,7 +30,7 @@ public:
     static QString typeToString(HourType type);
     HourType hourType() const;
 
-private:
+  private:
     HourType m_type;
     ReadingTabModel* m_readingsModel;
 };

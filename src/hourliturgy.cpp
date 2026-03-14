@@ -8,17 +8,12 @@
 #include "readingtabmodel.h"
 #include <QMetaType>
 
-HourLiturgy::HourLiturgy(QObject* parent) 
-    : QObject(parent)
-    , m_type(Vespers)
-    , m_readingsModel(new ReadingTabModel(this))
-{}
+HourLiturgy::HourLiturgy(QObject* parent)
+    : QObject(parent), m_type(Vespers), m_readingsModel(new ReadingTabModel(this)) {
+}
 
 HourLiturgy::HourLiturgy(HourType type, QList<Reading*> readings, QObject* parent)
-    : QObject(parent)
-    , m_type(type)
-    , m_readingsModel(new ReadingTabModel(this))
-{
+    : QObject(parent), m_type(type), m_readingsModel(new ReadingTabModel(this)) {
     m_readingsModel->setReadings(readings);
 }
 
@@ -36,13 +31,21 @@ ReadingTabModel* HourLiturgy::readingsModel() const {
 
 QString HourLiturgy::typeToString(HourType type) {
     switch (type) {
-        case Compline: return "complies";
-        case Lauds: return "laudes";
-        case Lectures: return "lectures";
-        case None: return "none";
-        case Sext: return "sexte";
-        case Terce: return "tierce";
-        case Vespers: return "vepres";
-        default: return "vepres";
+    case Compline:
+        return "complies";
+    case Lauds:
+        return "laudes";
+    case Lectures:
+        return "lectures";
+    case None:
+        return "none";
+    case Sext:
+        return "sexte";
+    case Terce:
+        return "tierce";
+    case Vespers:
+        return "vepres";
+    default:
+        return "vepres";
     }
 }

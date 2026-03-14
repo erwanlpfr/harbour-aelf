@@ -5,8 +5,7 @@
 
 #include "liturgicalcolorhelper.h"
 
-QColor LiturgicalColorHelper::getColorFromString(const QString& color)
-{
+QColor LiturgicalColorHelper::getColorFromString(const QString& color) {
     if (color == "blanc")
         return QColor(255, 255, 255);
     else if (color == "vert")

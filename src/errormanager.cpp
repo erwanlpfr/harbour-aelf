@@ -5,38 +5,32 @@
 
 #include "errormanager.h"
 
-ErrorManager::ErrorManager(QObject *parent)
-    : QObject(parent)
-    , m_showRetry(false)
-{
+ErrorManager::ErrorManager(QObject* parent) : QObject(parent), m_showRetry(false) {
 }
 
-void ErrorManager::showError(const QString &error, bool showRetry)
-{
+void ErrorManager::showError(const QString& error, bool showRetry) {
     if (m_error == error && m_showRetry == showRetry) {
         return;
     }
-    
+
     m_error = error;
     m_showRetry = showRetry;
-    
+
     emit errorChanged();
     emit showRetryChanged();
 }
 
-void ErrorManager::clearError()
-{
+void ErrorManager::clearError() {
     if (!m_error.isEmpty()) {
         m_error.clear();
         m_showRetry = false;
-        
+
         emit errorChanged();
         emit showRetryChanged();
     }
 }
 
-void ErrorManager::retry()
-{
+void ErrorManager::retry() {
     emit retryRequested();
     clearError();
 }

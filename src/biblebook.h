@@ -17,18 +17,27 @@ class BibleBook : public QObject {
     Q_PROPERTY(int chapterCount READ chapterCount CONSTANT)
     Q_PROPERTY(QString section READ section CONSTANT)
 
-public:
-    explicit BibleBook(const QString& code, const QString& name, 
-                      const QString& abbreviation, int chapterCount,
-                      const QString& section, QObject* parent = nullptr);
+  public:
+    explicit BibleBook(const QString& code, const QString& name, const QString& abbreviation,
+                       int chapterCount, const QString& section, QObject* parent = nullptr);
 
-    QString code() const { return m_code; }
-    QString name() const { return m_name; }
-    QString abbreviation() const { return m_abbreviation; }
-    int chapterCount() const { return m_chapterCount; }
-    QString section() const { return m_section; }
+    QString code() const {
+        return m_code;
+    }
+    QString name() const {
+        return m_name;
+    }
+    QString abbreviation() const {
+        return m_abbreviation;
+    }
+    int chapterCount() const {
+        return m_chapterCount;
+    }
+    QString section() const {
+        return m_section;
+    }
 
-private:
+  private:
     QString m_code;
     QString m_name;
     QString m_abbreviation;

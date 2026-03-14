@@ -5,23 +5,21 @@
 
 #include "informationmodel.h"
 #include "information.h"
-#include "liturgyrepository.h"
 #include "liturgyidentifierkey.h"
+#include "liturgyrepository.h"
 
 InformationModel::InformationModel(QObject* parent)
-    : LiturgyBaseModel(parent)
-    , m_information(nullptr)
-{
-    connect(m_liturgyRepository, &LiturgyRepository::informationChanged, this, &InformationModel::onInformationChanged);
+    : LiturgyBaseModel(parent), m_information(nullptr) {
+    connect(m_liturgyRepository, &LiturgyRepository::informationChanged, this,
+            &InformationModel::onInformationChanged);
 }
 
-Information* InformationModel::information() const
-{
+Information* InformationModel::information() const {
     return m_information;
 }
 
-void InformationModel::onInformationChanged(const LiturgyIdentifierKey& key, Information* information)
-{
+void InformationModel::onInformationChanged(const LiturgyIdentifierKey& key,
+                                            Information* information) {
     if (LiturgyIdentifierKeyFactory::getPair(m_date, m_zone) == key) {
         m_information = information;
         emit informationChanged();
@@ -29,7 +27,6 @@ void InformationModel::onInformationChanged(const LiturgyIdentifierKey& key, Inf
     }
 }
 
-void InformationModel::loadData()
-{
+void InformationModel::loadData() {
     m_liturgyRepository->loadInformation(LiturgyIdentifierKeyFactory::getPair(m_date, m_zone));
 }

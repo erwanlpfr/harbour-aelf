@@ -10,7 +10,7 @@
 #include <QString>
 
 class LiturgicalColorHelper {
-public:
+  public:
     static QColor getColorFromString(const QString& color);
 };
 

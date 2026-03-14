@@ -7,19 +7,20 @@
 #define MASSMODEL_H
 
 #include "informationmodel.h"
+#include "liturgyidentifierkey.h"
 #include "mass.h"
 #include <QObject>
 #include <QStringList>
-#include "liturgyidentifierkey.h"
 
 class MassModel : public InformationModel {
     Q_OBJECT
 
     Q_PROPERTY(QStringList massNames READ massNames NOTIFY massNamesChanged)
     Q_PROPERTY(Mass* currentMass READ currentMass NOTIFY currentMassChanged)
-    Q_PROPERTY(int currentMassIndex READ currentMassIndex WRITE setCurrentMassIndex NOTIFY currentMassIndexChanged)
+    Q_PROPERTY(int currentMassIndex READ currentMassIndex WRITE setCurrentMassIndex NOTIFY
+                   currentMassIndexChanged)
 
-public:
+  public:
     explicit MassModel(QObject* parent = nullptr);
 
     QStringList massNames() const;
@@ -27,18 +28,18 @@ public:
     int currentMassIndex() const;
     void setCurrentMassIndex(int index);
 
-signals:
+  signals:
     void massNamesChanged();
     void currentMassChanged();
     void currentMassIndexChanged();
 
-private slots:
+  private slots:
     void onMassesChanged(const LiturgyIdentifierKey& key, QList<Mass*> masses);
 
-protected:
+  protected:
     void loadData() override;
 
-private:
+  private:
     QList<Mass*> m_masses;
     int m_currentMassIndex;
 };

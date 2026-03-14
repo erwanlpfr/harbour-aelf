@@ -17,11 +17,8 @@ class BibleVersesModel : public QAbstractListModel {
     Q_PROPERTY(int chapter READ chapter WRITE setChapter NOTIFY chapterChanged)
     Q_PROPERTY(int count READ rowCount NOTIFY countChanged)
 
-public:
-    enum Roles {
-        VerseNumberRole = Qt::UserRole + 1,
-        TextRole
-    };
+  public:
+    enum Roles { VerseNumberRole = Qt::UserRole + 1, TextRole };
 
     explicit BibleVersesModel(QObject* parent = nullptr);
     ~BibleVersesModel();
@@ -30,20 +27,24 @@ public:
     QVariant data(const QModelIndex& index, int role) const override;
     QHash<int, QByteArray> roleNames() const override;
 
-    QString bookCode() const { return m_bookCode; }
+    QString bookCode() const {
+        return m_bookCode;
+    }
     void setBookCode(const QString& bookCode);
 
-    int chapter() const { return m_chapter; }
+    int chapter() const {
+        return m_chapter;
+    }
     void setChapter(int chapter);
 
     Q_INVOKABLE void loadVerses();
 
-signals:
+  signals:
     void bookCodeChanged();
     void chapterChanged();
     void countChanged();
 
-private:
+  private:
     QList<BibleVerse*> m_verses;
     QString m_bookCode;
     int m_chapter;

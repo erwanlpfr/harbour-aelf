@@ -16,17 +16,24 @@ class BibleVerse : public QObject {
     Q_PROPERTY(int verseNumber READ verseNumber CONSTANT)
     Q_PROPERTY(QString text READ text CONSTANT)
 
-public:
-    explicit BibleVerse(const QString& bookCode, int chapter, 
-                       int verseNumber, const QString& text,
-                       QObject* parent = nullptr);
+  public:
+    explicit BibleVerse(const QString& bookCode, int chapter, int verseNumber, const QString& text,
+                        QObject* parent = nullptr);
 
-    QString bookCode() const { return m_bookCode; }
-    int chapter() const { return m_chapter; }
-    int verseNumber() const { return m_verseNumber; }
-    QString text() const { return m_text; }
+    QString bookCode() const {
+        return m_bookCode;
+    }
+    int chapter() const {
+        return m_chapter;
+    }
+    int verseNumber() const {
+        return m_verseNumber;
+    }
+    QString text() const {
+        return m_text;
+    }
 
-private:
+  private:
     QString m_bookCode;
     int m_chapter;
     int m_verseNumber;

@@ -5,14 +5,8 @@
 
 #include "biblebook.h"
 
-BibleBook::BibleBook(const QString& code, const QString& name,
-                     const QString& abbreviation, int chapterCount,
-                     const QString& section, QObject* parent)
-    : QObject(parent)
-    , m_code(code)
-    , m_name(name)
-    , m_abbreviation(abbreviation)
-    , m_chapterCount(chapterCount)
-    , m_section(section)
-{
+BibleBook::BibleBook(const QString& code, const QString& name, const QString& abbreviation,
+                     int chapterCount, const QString& section, QObject* parent)
+    : QObject(parent), m_code(code), m_name(name), m_abbreviation(abbreviation),
+      m_chapterCount(chapterCount), m_section(section) {
 }

@@ -15,7 +15,7 @@ class BibleBooksModel : public QAbstractListModel {
     Q_OBJECT
     Q_PROPERTY(QString section READ section WRITE setSection NOTIFY sectionChanged)
 
-public:
+  public:
     enum Roles {
         CodeRole = Qt::UserRole + 1,
         NameRole,
@@ -31,15 +31,17 @@ public:
     QVariant data(const QModelIndex& index, int role) const override;
     QHash<int, QByteArray> roleNames() const override;
 
-    QString section() const { return m_section; }
+    QString section() const {
+        return m_section;
+    }
     void setSection(const QString& section);
 
     Q_INVOKABLE void loadBooks();
 
-signals:
+  signals:
     void sectionChanged();
 
-private:
+  private:
     void filterBooks();
 
     QList<BibleBook*> m_allBooks;

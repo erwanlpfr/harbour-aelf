@@ -5,13 +5,8 @@
 
 #include "bibleverse.h"
 
-BibleVerse::BibleVerse(const QString& bookCode, int chapter,
-                       int verseNumber, const QString& text,
+BibleVerse::BibleVerse(const QString& bookCode, int chapter, int verseNumber, const QString& text,
                        QObject* parent)
-    : QObject(parent)
-    , m_bookCode(bookCode)
-    , m_chapter(chapter)
-    , m_verseNumber(verseNumber)
-    , m_text(text)
-{
+    : QObject(parent), m_bookCode(bookCode), m_chapter(chapter), m_verseNumber(verseNumber),
+      m_text(text) {
 }
